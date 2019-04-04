@@ -1,0 +1,54 @@
+/* Team Champions-League, style.css */
+
+/* 
+   We used Modular Scale Minor 3rd, 120% in the Math calculations below.
+   We assumed browser defult font size of 16px.
+*/
+
+/* ===== BASE STYLES ==================== */
+
+/* Daniel, Richard - you can add to below for your pages */
+
+html {
+  font-size: 1em;  /* 16px, (16px/16px=1em) */
+  line-height: 1.2em;  /* 120% at 19.2px, (19.2/16px=1.2) */
+  padding: 0.5em 0.5em;  /* 8px, (8px/16px=0.5em) */
+}
+
+/* setup "font-family" of Sans-Serif */
+body {
+  font-family: "Times New Roman", Georgia, Serif;
+  background-color: whitesmoke;
+}
+
+/* for Responsive Media */
+img, audio, video {
+  display: block;
+  max-width: 100%;
+}
+
+/* ===== LAYOUT STYLES ================== */
+
+/* team members add their styles below for their pages */
+
+
+
+/* ===== MODULAR STYLES ================= */
+
+/* Our MEDIA queries are listed below */
+
+/* for tablets ====== */
+@media screen and (min-width: 768px) { 
+  /* add styles here */
+} 
+
+/* for desktops and wide screens ====== */
+@media screen and (min-width: 992px) {
+  /* add styles here */
+}
+  
+/* ===== STATE STYLES =================== */
+
+/* we need some styles below */
+
+/* ====== end of style.css ============== */

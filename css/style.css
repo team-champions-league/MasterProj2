@@ -14,7 +14,7 @@
 
 /* team members add their styles below for their pages */
 
-/* Nilufer Anlar - About Us page styles are listed below */
+/* Nilufer Anlar - Styles for the About Us pages listed below */
 
 html {
   font-size: 1em;  /* 16px, (16px/16px=1em) */
@@ -83,6 +83,10 @@ iframe {
 }
 
 /* Nilufer Anlar - constitution page */
+#constitution p {
+  color: mediumblue; 
+  font-style: oblique ;
+}
 
 /* use accordion button for the articles */
 .button {
@@ -93,10 +97,11 @@ iframe {
   background-color: #eee;
   color: #444;
   cursor: pointer;
-  padding: 18px;
-  width: 100%;
+  padding: 12px;
+  width: 98%;
   text-align: left;  /* center it at bigger screens */
   border: 1px solid red;
+  outline: none;
   font-weight: bold;
   transition: 0.4s;
 }
@@ -115,8 +120,10 @@ iframe {
 }
 
 #amend {
-  color: blue;
+  font-size: 0.8em;
+  color: royalblue;
   font-style: oblique;
+  margin-top: 1em;  /* at 16px */
 }
 
 

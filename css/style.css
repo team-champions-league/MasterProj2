@@ -82,29 +82,16 @@ iframe {
   padding: 0.25em 0;   /* 4px */
 }
 
-/* constitution page */
+/* Nilufer Anlar - constitution page */
 
-/* ??? */
-/*
-.label .button {
-  font-size: 19px;
-  text-transform: uppercase;
-}
-
-.button {
-  font-weight: 200;
-  color: #998f8b;
-  display: block;
-}
-*/
-
+/* use accordion button for the articles */
 .accordion {
   background-color: #eee;
   color: #444;
   cursor: pointer;
   padding: 18px;
   width: 100%;
-  text-align: left;  /* or center? */
+  text-align: left;  /* center it at bigger screens */
   border: 1px solid red;
   font-weight: bold;
   transition: 0.4s;
@@ -112,10 +99,10 @@ iframe {
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
-  background-color: #ccc;
+  background-color: pink;  /* change the color later */
 }
 
-/* Style the accordion panel. Note: hidden by default *
+/* Style the accordion panel. Note: hidden by default */
 .panel{
   padding: 18px 0;   /* or 0 18px ??? */
   background-color: white; /* ??? */

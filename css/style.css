@@ -90,6 +90,12 @@ iframe {
 }
 
 /* Button*/
+.button {
+  font-weight: 200;
+  color: #998f8b;
+  display: block;
+}
+
 .accordion {
   background-color: #A7C3C9;
   color: #333;
@@ -108,6 +114,7 @@ iframe {
 .active, .accordion:hover {
   background-color: #9D6D72;
 }
+
 .panel{
   padding: 18px 0;
   display: none;

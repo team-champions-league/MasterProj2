@@ -114,6 +114,10 @@ iframe {
   overflow: hidden;
 }
 
+#amend {
+  color: blue;
+  font-style: oblique;
+}
 
 
 

@@ -97,26 +97,26 @@ iframe {
 }
 
 .accordion {
-  background-color: #A7C3C9;
-  color: #333;
+  background-color: #eee;
+  color: #444;
   cursor: pointer;
   padding: 0.6315789474em;
   width: 100%;
-  text-align: center;
+  text-align: center;  /* or left */
   border: 1px solid #594e51;
   font-weight: bold;
-  transition: 0.2s;
-}
-.accordion h3{
-  font-size: 1.3em; /* ~ 19px @ 25.537px/em */
+  transition: 0.3s;
 }
 
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
-  background-color: #9D6D72;
+  background-color: #ccc;
 }
+
 
 .panel{
-  padding: 18px 0;
+  padding: 18px 0;   /* or 0 18px ??? */
+  background-color: white; /* ??? */
   display: none;
   overflow: hidden;
 }

@@ -84,28 +84,30 @@ iframe {
 
 /* constitution page */
 
+/* ??? */
+/*
 .label .button {
-  font-size: 0.744018483em; /* ~ 19px @ 25.537px/em */
+  font-size: 19px;
   text-transform: uppercase;
 }
 
-/* Button*/
 .button {
   font-weight: 200;
   color: #998f8b;
   display: block;
 }
+*/
 
 .accordion {
   background-color: #eee;
   color: #444;
   cursor: pointer;
-  padding: 0.6315789474em;
+  padding: 18px;
   width: 100%;
-  text-align: center;  /* or left */
-  border: 1px solid #594e51;
+  text-align: left;  /* or center? */
+  border: 1px solid red;
   font-weight: bold;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -113,7 +115,7 @@ iframe {
   background-color: #ccc;
 }
 
-
+/* Style the accordion panel. Note: hidden by default *
 .panel{
   padding: 18px 0;   /* or 0 18px ??? */
   background-color: white; /* ??? */

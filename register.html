@@ -4,13 +4,15 @@
 <head>
   <meta charset="utf-8" />
   <title>Registration Form</title>
-  <link rel="stylesheet" href="cssresets.css" />
+  <link rel="stylesheet" href="csscopy/resets.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
   <form id="registration" method="post" action="example.php" autocomplete="on">
     <div class="info">
+      
+      <h1>Event Registration</h1>
       <fieldset>
         <legend>Personal Information</legend>
         <select name="Solutations">
@@ -24,27 +26,34 @@
         <label>Phone:<sup>*</sup></label><input type="tel" name="Phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
       </fieldset>
     </div>
-    <div class="packages">
+    <div class="days">
       <fieldset>
-        <legend>Choose Your Package</legend>
-        <div>
-          <input type="radio" id="one" name="one" value="one" checked>
-          <label for="huey">Package 1</label>
-        </div>
-        <div>
-          <input type="radio" id="two" name="two" value="two">
-          <label for="dewey">Package 2</label>
-        </div>
-        <div>
-          <input type="radio" id="three" name="three" value="three">
-          <label for="louie">Package 3</label>
-        </div>
+        <legend>Choose Your Days</legend>
+        <table>
+          <tr>
+            <td>Saturday:</td>
+            <td>$100.00</td>
+            <td><input type="radio" id="sat" name="sat" value="Saturday" checked></td>
+          </tr>
+          <tr>
+            <td>Sunday:</td>
+            <td>$100.00</td>
+            <td><input type="radio" id="sun" name="sun" value="Sunday"></td>
+          </tr>
+          <tr>
+            <td>Both Days:</td>
+            <td>$180.00</td>
+            <td><input type="radio" id="both" name="both" value="both days"></td>
+          </tr>
+        </table>
+        <h4>Payment Methods:</h4>
+        <img src="images/credit_cards.png" alt="creditcards" class="cards">
       </fieldset>
     </div>
     <div class="buttons">
-    <button type="submit" value="Submit">REGISTER NOW</button>
-    <button type="reset" value="Reset">RESET</button>
-      </div>
+      <button type="submit" value="Submit">REGISTER NOW</button>
+      <button type="reset" value="Reset">RESET</button>
+    </div>
   </form>
 </body>
 

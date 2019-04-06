@@ -4,22 +4,47 @@
 <head>
   <meta charset="utf-8" />
   <title>Registration Form</title>
-  <link rel="stylesheet" href="normalize.css" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="cssresets.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-  <form>
-    <select name="Solutations">
-  <option value="Mr">Mr.</option>
-  <option value="Mrs">Mrs.</option>
-  <option value="Miss">Miss</option>
-  <option value="Dr">Dr.</option>
-</select>
-    <label>Full Name:<sup>*</sup></label><input type="text" name="name" id="fullname" placeholder="first last" required>
-    <label>Email:<sup>*</sup></label><input type="email" name="email" id="email" placeholder="email" required>
-    <label>Phone:<sup>*</sup></label><input type="tel" name="Phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
-
+  <form id="registration" method="post" action="example.php" autocomplete="on">
+    <div class="info">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <select name="Solutations">
+          <option value="Mr">Mr.</option>
+          <option value="Mrs">Mrs.</option>
+          <option value="Miss">Miss</option>
+          <option value="Dr">Dr.</option>
+        </select>
+        <label>Full Name:<sup>*</sup></label><input type="text" name="name" id="fullname" placeholder="first last" required>
+        <label>Email:<sup>*</sup></label><input type="email" name="email" id="email" placeholder="email" required>
+        <label>Phone:<sup>*</sup></label><input type="tel" name="Phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+      </fieldset>
+    </div>
+    <div class="packages">
+      <fieldset>
+        <legend>Choose Your Package</legend>
+        <div>
+          <input type="radio" id="one" name="one" value="one" checked>
+          <label for="huey">Package 1</label>
+        </div>
+        <div>
+          <input type="radio" id="two" name="two" value="two">
+          <label for="dewey">Package 2</label>
+        </div>
+        <div>
+          <input type="radio" id="three" name="three" value="three">
+          <label for="louie">Package 3</label>
+        </div>
+      </fieldset>
+    </div>
+    <div class="buttons">
+    <button type="submit" value="Submit">REGISTER NOW</button>
+    <button type="reset" value="Reset">RESET</button>
+      </div>
   </form>
 </body>
 

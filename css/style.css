@@ -8,6 +8,55 @@ We assumed browser defult font size of 16px.
 /* ===== BASE STYLES ==================== */
 
 /* Daniel, Richard - you can add to below for your pages */
+/** mobile registration**/
+
+form {
+  background: #cccccc;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+
+}
+
+input[type=text],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=tel] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+td {
+  padding-right: 20px;
+}
+
+.cards {
+  width: 30%;
+}
+/**richard's form**/
 
 *{
   margin: 0px;

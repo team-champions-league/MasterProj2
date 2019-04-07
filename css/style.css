@@ -7,12 +7,12 @@
 
 /* ===== BASE STYLES ==================== */
 
-/* Daniel, Richard - you can add to below for your pages */
-
 
 /* ===== LAYOUT STYLES ================== */
 
-/* team members add their styles below for their pages */
+/* Daniel and Richard will add their style here */
+
+
 
 /* Nilufer Anlar - Styles for the About Us pages listed below */
 
@@ -140,6 +140,31 @@ iframe {
   margin: 10px;
   padding: 5px;
   font-style: oblique;
+}
+
+/* Nilufer Anlar cong2018 page */
+#main-cong18 p {
+  font-size: 1em;
+  line-height: 1.2em;
+  font-style: normal;
+  color: purple;
+}
+
+#cpic1, #cpic3, #cpic4, #cpic5 {
+  width: 240px;
+  height: 160px;
+  float: left;
+  margin-right: 10px;
+}
+
+#cpic2 {
+  width: 300px;
+  height: 200px;
+  float: right;
+}
+
+.2018pic1, .2018pic2, .2018pic3 {
+  display: inline-block;  /* not working */
 }
 
 

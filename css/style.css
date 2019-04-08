@@ -8,56 +8,10 @@
 /* ===== BASE STYLES ==================== */
 
 /* Daniel, Richard - you can add to below for your pages */
+
 /** mobile registration**/
 
-form {
-  background: #ccc;
-  width: 90%;
-  margin: auto;
-  padding: 10px;
-
-}
-
-input[type=text],
-select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #000;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-input[type=email] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #000;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-input[type=tel] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #000;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-td {
-  padding-right: 20px;
-}
-
-.cards {
-  width: 30%;
-}
 /**richard's form**/
-
 
 /* ===== LAYOUT STYLES ================== */
 
@@ -66,49 +20,199 @@ td {
 /* Nilufer Anlar - About Us page styles are listed below */
 
 html {
-  font-size: 1em;  /* 16px, (16px/16px=1em) */
-  line-height: 1.2em;  /* 120% at 19.2px, (19.2/16px=1.2) */
-  padding: 0.5em 0.5em;  /* 8px, (8px/16px=0.5em) */
+  font-size: 1em;
+  /* 16px, (16px/16px=1em) */
+  line-height: 1.2em;
+  /* 120% at 19.2px, (19.2/16px=1.2) */
+  padding: 0.5em 0.5em;
+  /* 8px, (8px/16px=0.5em) */
 }
 
 /* setup "font-family" of Sans-Serif */
+
 body {
   font-family: "Times New Roman", Georgia, Serif;
   background-color: whitesmoke;
 }
 
+form {
+  width: 95%;
+  margin: auto;
+  padding: 10px;
+  background-color: #ccc;
+  color: #1d2731;
+  border-radius: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /* for Responsive Media */
-img, audio, video {
+
+img,
+audio,
+video {
   display: block;
   max-width: 100%;
 }
 
 h1 {
-  font-size: 1.5em;  /* 24px, (24px/16px=1.5em) */
-  line-height: 1.81em;  /* 120% at ~29px, (29px/16px=1.81em) */
-  font-weight: 700;  /* for bold effect*/
+  font-size: 1.5em;
+  /* 24px, (24px/16px=1.5em) */
+  line-height: 1.81em;
+  /* 120% at ~29px, (29px/16px=1.81em) */
+  font-weight: 700;
+  /* for bold effect*/
 }
 
 h2 {
-  font-size: 1.25em;  /* 20px, (20px/16px=1.25em) */
-  line-height: 1.5em;  /* 120% at 24px, (24px/16px=1.15em) */
-  font-weight: 700;  /* for bold */
-  margin: 0.5em 0 0.5em 0;  /* 8px, (8px/16px=0.5em) */
+  font-size: 1.25em;
+  /* 20px, (20px/16px=1.25em) */
+  line-height: 1.5em;
+  /* 120% at 24px, (24px/16px=1.15em) */
+  font-weight: 700;
+  /* for bold */
+  margin: 0.5em 0 0.5em 0;
+  /* 8px, (8px/16px=0.5em) */
 }
 
 h3 {
-  font-size: 1em;  /* 16px, (16px/16px=1em) */
-  line-height: 1.25em;  /* 20px, (20px/16px=1.25em) */
-  font-weight: 700;  /* for bold */
-  margin: 0.5em 0 0.5em 0;  /* 8px, (8px/16px=0.5em) */
+  font-size: 1em;
+  /* 16px, (16px/16px=1em) */
+  line-height: 1.25em;
+  /* 20px, (20px/16px=1.25em) */
+  font-weight: 700;
+  /* for bold */
+  margin: 0.5em 0 0.5em 0;
+  /* 8px, (8px/16px=0.5em) */
 }
 
 p {
   font-family: "Times New Roman", Georgia, Serif;
-  font-size: 1em;  /* 16px, (16px/16px=1em) */
-  line-height: 1.2em;  /* 120% at 19.2px, (19.2px/16px=1.2em)*/
-  padding: 0 0 0.25em 0;  /* ~4px, (4px/16px=0.25em) */
+  font-size: 1em;
+  /* 16px, (16px/16px=1em) */
+  line-height: 1.2em;
+  /* 120% at 19.2px, (19.2px/16px=1.2em)*/
+  padding: 0 0 0.25em 0;
+  /* ~4px, (4px/16px=0.25em) */
 }
+
+/**registration form**/
+
+.reg-header {
+  text-align: center;
+}
+
+.info-header {
+  text-align: center;
+}
+
+input:focus {
+  background-color: lightyellow;
+}
+
+sup {
+  color: #ff4c4c;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff4c4c;
+  color: white;
+}
+
+input[type="reset"]:hover {
+  background-color: #ff4c4c;
+  color: white;
+}
+select {
+    width: 100%;
+    padding: 1px 6px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=text] {
+    width: 100%;
+    padding: 6px 6px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=email] {
+    width: 100%;
+    padding: 6px 6px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=tel] {
+    width: 100%;
+    padding: 6px 6px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    width: 100%;
+    padding: 8px 6px;
+    font-size: .80em;
+    border-radius: 4px;
+    background-color: darkgray;
+    border: 1px solid black;
+    margin-bottom: 10px;
+  }
+  input[type="reset"] {
+    width: 40%;
+    padding: 4px 10px;
+    margin-left: 30%;
+    margin-right;
+    30%;
+    font-size: .80em;
+    border-radius: 4px;
+    background-color: darkgray;
+    border: 1px solid black;
+  }
+  table {
+    width: 75%;
+    margin: auto;
+    text-align: left;
+  }
+  td {
+    padding: 10px;
+  }
+  .info {
+    text-align: left;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 0px 10px;
+  }
+  .days {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 0px 10px;
+  }
+  .days-inner {
+    width: 95%;
+    margin: 0px auto 10px auto;
+    border-bottom: 1px solid black;
+  }
+  .cards {
+    width: 50%;
+    margin:auto;
+    padding-bottom: 10px;
+  }
+/** end of reg form**/
+
+
 
 img.center {
   display: block;
@@ -119,42 +223,53 @@ img.center {
 iframe {
   position: relative;
   border: 1px solid black;
-  width: 95%;  /* for better user experience */
+  width: 95%;
+  /* for better user experience */
 }
 
 #footer {
   width: 100%;
   background-color: gray;
-  font-size: 0.75em;  /* 12px */
+  font-size: 0.75em;
+  /* 12px */
   text-align: center;
   margin: 1em 0;
-  padding: 0.25em 0;   /* 4px */
+  padding: 0.25em 0;
+  /* 4px */
 }
 
 /* Nilufer Anlar - constitution page */
 
 /* use accordion button for the articles */
+
 .accordion {
   background-color: #eee;
   color: #444;
   cursor: pointer;
   padding: 18px;
   width: 100%;
-  text-align: left;  /* center it at bigger screens */
+  text-align: left;
+  /* center it at bigger screens */
   border: 1px solid red;
   font-weight: bold;
   transition: 0.4s;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-  background-color: pink;  /* change the color later */
+
+.active,
+.accordion:hover {
+  background-color: pink;
+  /* change the color later */
 }
 
 /* Style the accordion panel. Note: hidden by default */
-.panel{
-  padding: 18px 0;   /* or 0 18px ??? */
-  background-color: white; /* ??? */
+
+.panel {
+  padding: 18px 0;
+  /* or 0 18px ??? */
+  background-color: white;
+  /* ??? */
   display: none;
   overflow: hidden;
 }
@@ -171,15 +286,62 @@ iframe {
 /* Our MEDIA queries are listed below */
 
 /* for tablets ====== */
-@media screen and (min-width: 768px) { 
+
+@media screen and (min-width: 768px) {
   /* add styles here */
-} 
+  /**Styles for registration form**/
+  form {
+    width: 70%;
+    margin: auto;
+  }
+  input[type="submit"] {
+    width: 70%;
+    margin-right: 15%;
+    margin-left: 15%;
+  }
+  input[type="reset"] {
+    width: 30%;
+    margin-right: 35%;
+    margin-left: 35%;
+  }
+  h1 {
+    font-size: 1.75em;
+  }
+}
+
+
+
+/**end of registration form**/
 
 /* for desktops and wide screens ====== */
+
 @media screen and (min-width: 992px) {
   /* add styles here */
+  /**Styles for registration form**/
+  form {
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+  }
+  input[type="submit"] {
+    width: 60%;
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+  input[type="reset"] {
+    width: 20%;
+    margin-right: 40%;
+    margin-left: 40%;
+  }
+  .info {
+    padding: 20px;
+  }
+  .days {
+    padding: 20px;
+  }
+  /**end of registration form**/
 }
-  
+
 /* ===== STATE STYLES =================== */
 
 /* we need some styles below */

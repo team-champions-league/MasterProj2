@@ -140,12 +140,10 @@ td {
 }
 /**richard's form**/
 
-
-/* ===== LAYOUT STYLES ================== */
-
-/* team members add their styles below for their pages */
-
-/* Nilufer Anlar - About Us page styles are listed below */
+*{
+  margin: 0px;
+  padding: 0px;
+}
 
 html {
   font-size: 1em;  /* 16px, (16px/16px=1em) */
@@ -165,86 +163,9 @@ img, audio, video {
   max-width: 100%;
 }
 
-h1 {
-  font-size: 1.5em;  /* 24px, (24px/16px=1.5em) */
-  line-height: 1.81em;  /* 120% at ~29px, (29px/16px=1.81em) */
-  font-weight: 700;  /* for bold effect*/
-}
+/* ===== LAYOUT STYLES ================== */
 
-h2 {
-  font-size: 1.25em;  /* 20px, (20px/16px=1.25em) */
-  line-height: 1.5em;  /* 120% at 24px, (24px/16px=1.15em) */
-  font-weight: 700;  /* for bold */
-  margin: 0.5em 0 0.5em 0;  /* 8px, (8px/16px=0.5em) */
-}
-
-h3 {
-  font-size: 1em;  /* 16px, (16px/16px=1em) */
-  line-height: 1.25em;  /* 20px, (20px/16px=1.25em) */
-  font-weight: 700;  /* for bold */
-  margin: 0.5em 0 0.5em 0;  /* 8px, (8px/16px=0.5em) */
-}
-
-p {
-  font-family: "Times New Roman", Georgia, Serif;
-  font-size: 1em;  /* 16px, (16px/16px=1em) */
-  line-height: 1.2em;  /* 120% at 19.2px, (19.2px/16px=1.2em)*/
-  padding: 0 0 0.25em 0;  /* ~4px, (4px/16px=0.25em) */
-}
-
-img.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-iframe {
-  position: relative;
-  border: 1px solid black;
-  width: 95%;  /* for better user experience */
-}
-
-#footer {
-  width: 100%;
-  background-color: gray;
-  font-size: 0.75em;  /* 12px */
-  text-align: center;
-  margin: 1em 0;
-  padding: 0.25em 0;   /* 4px */
-}
-
-/* Nilufer Anlar - constitution page */
-
-/* use accordion button for the articles */
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;  /* center it at bigger screens */
-  border: 1px solid red;
-  font-weight: bold;
-  transition: 0.4s;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-  background-color: pink;  /* change the color later */
-}
-
-/* Style the accordion panel. Note: hidden by default */
-.panel{
-  padding: 18px 0;   /* or 0 18px ??? */
-  background-color: white; /* ??? */
-  display: none;
-  overflow: hidden;
-}
-
-#amend {
-  color: blue;
-  font-style: oblique;
-}
+/* team members add their styles below for their pages */
 
 
 
@@ -253,6 +174,7 @@ iframe {
 /* Our MEDIA queries are listed below */
 
 /* for tablets ====== */
+
 @media screen and (max-width : 760px){
   /*Make dropdown links appear inline*/
   ul {
@@ -272,10 +194,7 @@ iframe {
     display:block;
   }
 }
-/* add styles here */
 
-/* for desktops and wide screens ====== */
-@media screen and (min-width: 992px) {
   /* add styles here */
 }
 
@@ -284,3 +203,19 @@ iframe {
 /* we need some styles below */
 
 /* ====== end of style.css ============== */
+=======
+/* The "responsive" class is added to the navbar with JavaScript when clicks on the icon. The navbar fits on small screens vertically instead of horizontally. */
+@media screen and (max-width: 480px) {
+
+
+  /* for desktops and wide screens ====== */
+  @media screen and (min-width: 992px) {
+
+    /* add styles here */
+  }
+
+  /* ===== STATE STYLES =================== */
+
+  /* we need some styles below */
+
+  /* ====== end of style.css ============== */

@@ -14,16 +14,16 @@
 
 
 
-/* Nilufer Anlar - Styles for the About Us pages listed below */
+/* Nilufer Anlar - Styles for the About pages listed below */
 
-html {
+#main-about {
   font-size: 1em;  /* 16px, (16px/16px=1em) */
   line-height: 1.2em;  /* 120% at 19.2px, (19.2/16px=1.2) */
   padding: 0.5em 0.5em;  /* 8px, (8px/16px=0.5em) */
 }
 
 /* setup "font-family" of Sans-Serif */
-body {
+#body-about {
   font-family: "Times New Roman", Georgia, Serif;
   background-color: whitesmoke;
 }
@@ -69,22 +69,42 @@ img.center {
 
 iframe {
   position: relative;
-  border: 1px solid black;
+  border: none;
   width: 95%;  /* for better user experience */
 }
 
-#footer {
-  width: 100%;
-  background-color: gray;
-  font-size: 0.75em;  /* 12px */
-  text-align: center;
-  margin: 1em 0;
-  padding: 0.25em 0;   /* 4px */
+/* Nilufer Anlar - about page */
+#umind {
+  width: 40%; /* for mobile friendly */
+  float: right;
+}
+
+#q-list {
+  list-style-type: square;
+  margin: 5px;
+  padding: 5px;
+}
+
+#q-list li {
+  font-size: 0.9em;
+  font-style: oblique;
+  color: mediumblue;
+  margin: 5px; 
+}
+
+#tman {
+  width: 50%; /* for mobile friendly */
+  float: left;
+  margin-right: 5px;
 }
 
 /* Nilufer Anlar - constitution page */
+#body-const {
+  margin: 10px;
+}
+
 #constitution p {
-  color: mediumblue; 
+  color: royalblue; 
   font-style: oblique ;
 }
 
@@ -97,10 +117,10 @@ iframe {
   background-color: #eee;
   color: #444;
   cursor: pointer;
-  padding: 12px;
+  padding: 10px;
   width: 98%;
   text-align: left;  /* center it at bigger screens */
-  border: 1px solid red;
+  border: 1px solid maroon;
   outline: none;
   font-weight: bold;
   transition: 0.4s;
@@ -113,8 +133,8 @@ iframe {
 
 /* Style the accordion panel. Note: hidden by default */
 .panel{
-  padding: 0 18px;
-  background-color: white; /* ??? */
+  padding: 0 12px;
+  background-color: white;
   display: none;
   overflow: hidden;
 }
@@ -161,10 +181,6 @@ iframe {
   width: 300px;
   height: 200px;
   float: right;
-}
-
-.2018pic1, .2018pic2, .2018pic3 {
-  display: inline-block;  /* not working */
 }
 
 

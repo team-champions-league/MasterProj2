@@ -7,11 +7,93 @@ We assumed browser defult font size of 16px.
 
 /* ===== BASE STYLES ==================== */
 
-/* Daniel, Richard - you can add to below for your pages */
+/* Daniel*/
+
+/*Strip the ul of padding and list styling*/
+ul {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  position: absolute;
+}
+/*Create a horizontal list with spacing*/
+li {
+  display:inline-block;
+  float: left;
+  margin-right: 1px;
+}
+/*Style for menu links*/
+li a {
+  display:block;
+  min-width:140px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  background: #2f3036;
+  text-decoration: none;
+}
+/*Hover state for top level links*/
+li:hover a {
+  background: #19c589;
+}
+/*Style for dropdown links*/
+li:hover ul a {
+  background: #f3f3f3;
+  color: #2f3036;
+  height: 40px;
+  line-height: 40px;
+}
+/*Hover state for dropdown links*/
+li:hover ul a:hover {
+  background: #19c589;
+  color: #fff;
+}
+
+/*Hide dropdown links until they are needed*/
+li ul {
+  display: none;
+}
+/*Make dropdown links vertical*/
+li ul li {
+  display: block;
+  float: none;
+}
+/*Prevent text wrapping*/
+li ul li a {
+  width: auto;
+  min-width: 100px;
+  padding: 0 20px;
+}
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+  display: block;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  color: #fff;
+  background: #19c589;
+  text-align: center;
+  padding: 10px 0;
+  display: none;
+}
+/*Hide checkbox*/
+input[type=checkbox]{
+  display: none;
+}
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+  display: block;
+}
+
 /** mobile registration**/
 
 form {
-  background: #cccccc;
+  background: #ccc;
   width: 90%;
   margin: auto;
   padding: 10px;
@@ -82,62 +164,6 @@ img, audio, video {
 }
 
 /* ===== LAYOUT STYLES ================== */
-#header{
-  width: 100%;
-  height: 80px;
-  background-color: #333;
-  box-shadow: 0px 2px 4px gray;
-}
-/* Add a black background color to the top navigation */
-#navbar{
-  width:100px;
-  height: 80px;
-  float: right;
-}
-
-/* Style the links inside the navigation bar */
-#navbar> li {
-  width: 200px;
-  list-style: none;
-  float: left;
-  border-right: 1px solid gray;
-  border-left: 1px solid gray;
-
-}
-
-li>a {
-  display: block;
-  color: white;
-  line-height: 80px;
-  text-align: center;
-  font-family: sans-serif;
-  font-size: 20px;
-  text-decoration: none;
-}
-
-/* Change the color of links on hover */
-
-li>a:hover,
-li>a:focus{
-  background: whitesmoke;
-  color: #333;
-}
-
-#logo{
-  width: 200px;
-  height: 80px;
-  float: left;
-}
-/* Add an active class to highlight the current page */
-.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-/* Hide the link that should open and close the topnav on small screens */
-#navbar .icon {
-  display: none;
-}
 
 /* team members add their styles below for their pages */
 
@@ -148,60 +174,39 @@ li>a:focus{
 /* Our MEDIA queries are listed below */
 
 /* for tablets ====== */
-@media screen and (max-width: 1060px) {
-  #header{
+
+@media screen and (max-width : 760px){
+  /*Make dropdown links appear inline*/
+  ul {
+    position: static;
+    display: none;
+  }
+  /*Create vertical spacing*/
+  li {
+    margin-bottom: 1px;
+  }
+  /*Make all menu links full width*/
+  ul li, li a {
     width: 100%;
-    height: 60px;
-    position: relative;
-    top: 80px;
   }
-  #navbar{
-    width:100px;
-    height: 60px;
-    float: right;
+  /*Display 'show menu' link*/
+  .show-menu {
+    display:block;
   }
-  #navbar> li {
-    width: 18%;
-  }
-  li>a {
-    font-size: 16px;
-    line-height: 60px;
-  }
-  #logo{
-    width: 200px;
-    height: 80px;
-    float: left;
-    padding-left: 40px;
-    position: absolute;
-    top: -80px;
-  }
+}
 
   /* add styles here */
 }
+
+/* ===== STATE STYLES =================== */
+
+/* we need some styles below */
+
+/* ====== end of style.css ============== */
+=======
 /* The "responsive" class is added to the navbar with JavaScript when clicks on the icon. The navbar fits on small screens vertically instead of horizontally. */
 @media screen and (max-width: 480px) {
-  #header{
-    width: 100%;
-    height: 60px;
-  }
-  #navbar{
-    width:100px;
-    height: 60px;
-    float: right;
-  }
-  #navbar> li {
-    width: 200px;
-    list-style: none;
-    float: none;
-    border-bottom: 1px solid whitesmoke;
-  }
-  li>a {
-    display: block;
-    color: white;
-    line-height: 60px;
-    font-size: 20px;
-    background: #333;
-  }
+
 
   /* for desktops and wide screens ====== */
   @media screen and (min-width: 992px) {

@@ -39,7 +39,7 @@ form {
   width: 95%;
   margin: auto;
   padding: 10px;
-  background-color: #ccc;
+  background-color: cadetblue;
   color: #1d2731;
   border-radius: 4px;
   font-family: Arial, Helvetica, sans-serif;
@@ -99,14 +99,20 @@ p {
 
 .reg-header {
   text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: .95em;
+ 
 }
 
 .info-header {
   text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size:.90em;
 }
 
 input:focus {
-  background-color: lightyellow;
+  background-color: lemonchiffon;
+
 }
 
 sup {
@@ -114,105 +120,133 @@ sup {
 }
 
 input[type="submit"]:hover {
-  background-color: #ff4c4c;
-  color: white;
+  background-color:darkorange;
+  transition-duration: 1.5s;
+  cursor: pointer;
 }
 
 input[type="reset"]:hover {
-  background-color: #ff4c4c;
-  color: white;
+  background-color:darkorange;
+  transition-duration: 1.5s;
+  cursor: pointer;
 }
+
 select {
-    width: 100%;
-    padding: 1px 6px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #000;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  input[type=text] {
-    width: 100%;
-    padding: 6px 6px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #000;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  input[type=email] {
-    width: 100%;
-    padding: 6px 6px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #000;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  input[type=tel] {
-    width: 100%;
-    padding: 6px 6px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #000;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  input[type="submit"] {
-    width: 100%;
-    padding: 8px 6px;
-    font-size: .80em;
-    border-radius: 4px;
-    background-color: darkgray;
-    border: 1px solid black;
-    margin-bottom: 10px;
-  }
-  input[type="reset"] {
-    width: 40%;
-    padding: 4px 10px;
-    margin-left: 30%;
-    margin-right;
-    30%;
-    font-size: .80em;
-    border-radius: 4px;
-    background-color: darkgray;
-    border: 1px solid black;
-  }
-  table {
-    width: 75%;
-    margin: auto;
-    text-align: left;
-  }
-  td {
-    padding: 10px;
-  }
-  .info {
-    text-align: left;
-    border: 1px solid black;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    padding: 0px 10px;
-  }
-  .days {
-    text-align: center;
-    border: 1px solid black;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    padding: 0px 10px;
-  }
-  .days-inner {
-    width: 95%;
-    margin: 0px auto 10px auto;
-    border-bottom: 1px solid black;
-  }
-  .cards {
-    width: 50%;
-    margin:auto;
-    padding-bottom: 10px;
-  }
+  width: 100%;
+  padding: 1px 6px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 6px 6px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=email] {
+  width: 100%;
+  padding: 6px 6px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=tel] {
+  width: 100%;
+  padding: 6px 6px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 8px 6px;
+  font-size: .80em;
+  border-radius: 4px;
+  background-color: darkslateblue;
+  color:cornsilk;
+  border: none;
+  margin-bottom: 10px;
+}
+
+input[type="reset"] {
+  width: 40%;
+  padding: 4px 10px;
+  margin-left: 30%;
+  margin-right;
+  30%;
+  font-size: .80em;
+  border-radius: 4px;
+  background-color: darkslateblue;
+  color:cornsilk;
+  border: none;
+
+}
+
+table {
+  width: 75%;
+  margin: auto;
+  text-align: left;
+}
+
+td {
+  padding: 10px;
+}
+
+.info {
+  text-align: left;
+  border: 1px solid cornsilk;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 0px 10px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.days {
+  text-align: center;
+  border: 1px solid cornsilk;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 0px 10px;
+  font-size:.90em;
+   font-family: 'Raleway', sans-serif;
+}
+
+.days-inner {
+  width: 95%;
+  margin: 0px auto 10px auto;
+  border-bottom: 1px solid cornsilk;
+ 
+  font-size:1.15em;
+ 
+  
+}
+
+.cards {
+  width: 50%;
+  margin: auto;
+  padding: 10px;
+}
+.light{
+  font-weight:bolder;
+  color:black;
+  font-family: 'Libre Baskerville', serif
+}
+
 /** end of reg form**/
-
-
 
 img.center {
   display: block;

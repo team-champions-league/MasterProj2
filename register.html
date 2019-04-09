@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lamg="en">
+<html lamg="en" class="nojs">
 
 <head>
   <title>Team Champions-League Project 2 for ITMD-362</title>
@@ -8,31 +8,32 @@
   <link rel="stylesheet" media="screen" href="css/resets.css" />
   <link rel="stylesheet" media="screen" href="css/style.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Raleway" rel="stylesheet">
   <script src="js/isud.js" async></script>
 </head>
 
 <body>
-  <header>
+  <header id="page-header">
     <div id="logo">
       <img src="" alt="">
     </div>
-    <ul id="navbar">
-      <li><a herf="#">Home</a></li>
-      <li><a herf="#">About Us</a></li>
-      <li><a herf="#">Past Events</a></li>
-    </ul>
+    <nav id="navigation">
+      <ul class="nav">
+        <li id="nav-home"><a href="index.html">Home</a></li>
+        <li id="nav-about"><a href="#">About Us</a></li>
+        <li id="nav-constitution"><a href="#">Constitution</a></li>
+      </ul>
+    </nav>
   </header>
   <main>
     <form name="myForm" action="get" onsubmit="return validateForm()" method="post" autocomplete="on">
       <div class="reg-header">
-        <h1>Event Registration</h1>
-
+        <h1 class="light">EVENT  REGISTRATION</h1>
       </div>
       <div class="info">
         <div class="info-header">
-        <h2>INFORMATION</h2>
-          </div>
-
+          <h2 class="light">INFORMATION</h2>
+        </div>
         <label for="title">Title:</label>
         <select name="title">
           <option value="Mr">Mr.</option>
@@ -47,26 +48,37 @@
       </div>
       <div class="days">
         <div class="days-inner">
-          <h3>Choose Your Days</h3>
+          <h3 class="light">CHOOSE YOUR DAYS</h3>
           <table>
+            <tr>
+              <td>Wednsday:</td>
+              <td>$80.00</td>
+              <td><input type="radio" id="wed" name="wed" value="both days"></td>
+            </tr>
+            <tr>
+              <td>Thursday:</td>
+              <td>$80.00</td>
+              <td><input type="radio" id="thu" name="thu" value="both days"></td>
+            </tr>
+            <tr>
+              <td>Friday:</td>
+              <td>$100.00</td>
+              <td><input type="radio" id="fri" name="fri" value="both days"></td>
+            </tr>
             <tr>
               <td>Saturday:</td>
               <td>$100.00</td>
-              <td><input type="radio" id="sat" name="sat" value="Saturday" checked></td>
+              <td><input type="radio" id="sat" name="sat" value="Saturday"></td>
             </tr>
             <tr>
               <td>Sunday:</td>
               <td>$100.00</td>
               <td><input type="radio" id="sun" name="sun" value="Sunday"></td>
             </tr>
-            <tr>
-              <td>Both Days:</td>
-              <td>$180.00</td>
-              <td><input type="radio" id="both" name="both" value="both days"></td>
-            </tr>
+            
           </table>
         </div>
-        <h4>Payment Methods</h4>
+        <h4 class="light">PAYMENT METHODS</h4>
         <img src="images/cards.png" alt="cards" class="cards">
       </div>
       <div class="buttons">
@@ -74,10 +86,12 @@
         <input type="reset" id="reset" value="RESET">
       </div>
     </form>
-    <footer>
+    <footer id="footer">
       <p>Footer content goes here.</p>
     </footer>
   </main>
+
+
 </body>
 
 </html>

@@ -6,6 +6,16 @@ jQuery(function($) {
 
 // our team functions go below
 
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
 // acctivate the accordion 
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -26,6 +36,38 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+
+//submit and input for registration form//
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("First name must be filled out");
+    return false;
+  }
+  var x = document.forms["myForm"]["lname"].value;
+  if (x == "") {
+    alert("Last name must be filled out");
+    return false;
+  }
+  var x = document.forms["myForm"]["email"].value;
+  if (x == "") {
+    alert("Email Address must be filled out");
+    return false;
+  }
+  var x = document.forms["myForm"]["email"].value;
+  var atpos = x.indexOf("@");
+  var dotpos = x.lastIndexOf(".");
+  if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= x.length) {
+    alert("Not a valid e-mail address");
+    return false;
+  } else {
+    alert("Thank you for registering!");
+
+    }
+  }
+
+
 
 
   

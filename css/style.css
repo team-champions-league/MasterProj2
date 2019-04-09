@@ -7,12 +7,161 @@
 
 /* ===== BASE STYLES ==================== */
 
+/* Daniel*/
 
-/* ===== LAYOUT STYLES ================== */
+/*Strip the ul of padding and list styling*/
+ul {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  position: absolute;
+}
+/*Create a horizontal list with spacing*/
+li {
+  display:inline-block;
+  float: left;
+  margin-right: 1px;
+}
+/*Style for menu links*/
+li a {
+  display:block;
+  min-width:140px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  background: #2f3036;
+  text-decoration: none;
+}
+/*Hover state for top level links*/
+li:hover a {
+  background: #19c589;
+}
+/*Style for dropdown links*/
+li:hover ul a {
+  background: #f3f3f3;
+  color: #2f3036;
+  height: 40px;
+  line-height: 40px;
+}
+/*Hover state for dropdown links*/
+li:hover ul a:hover {
+  background: #19c589;
+  color: #fff;
+}
 
-/* Daniel and Richard will add their style here */
+/*Hide dropdown links until they are needed*/
+li ul {
+  display: none;
+}
+/*Make dropdown links vertical*/
+li ul li {
+  display: block;
+  float: none;
+}
+/*Prevent text wrapping*/
+li ul li a {
+  width: auto;
+  min-width: 100px;
+  padding: 0 20px;
+}
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+  display: block;
+}
 
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  color: #fff;
+  background: #19c589;
+  text-align: center;
+  padding: 10px 0;
+  display: none;
+}
+/*Hide checkbox*/
+input[type=checkbox]{
+  display: none;
+}
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+  display: block;
+}
 
+/** mobile registration**/
+
+form {
+  background: #ccc;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+
+}
+
+input[type=text],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=tel] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+td {
+  padding-right: 20px;
+}
+
+.cards {
+  width: 30%;
+}
+/**richard's form**/
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-size: 1em;  /* 16px, (16px/16px=1em) */
+  line-height: 1.2em;  /* 120% at 19.2px, (19.2/16px=1.2) */
+  padding: 0.5em 0.5em;  /* 8px, (8px/16px=0.5em) */
+}
+
+/* setup "font-family" of Sans-Serif */
+body {
+  font-family: "Times New Roman", Georgia, Serif;
+  background-color: whitesmoke;
+}
+
+/* for Responsive Media */
+img, audio, video {
+  display: block;
+  max-width: 100%;
+}
 
 /* Nilufer Anlar
    Styles my pages are listed below =================== */
@@ -212,7 +361,5 @@ iframe {
 }
   
 /* ===== STATE STYLES =================== */
-
-/* we need some styles below */
 
 /* ====== end of style.css ============== */

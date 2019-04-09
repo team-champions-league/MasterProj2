@@ -43,12 +43,12 @@ for (i = 0; i < acc.length; i++) {
 function validateForm() {
   var x = document.forms["myForm"]["fname"].value;
   if (x == "") {
-    alert("First name must be filled out");
+    alert("First Name must be filled out");
     return false;
   }
   var x = document.forms["myForm"]["lname"].value;
   if (x == "") {
-    alert("Last name must be filled out");
+    alert("Last Name must be filled out");
     return false;
   }
   var x = document.forms["myForm"]["email"].value;

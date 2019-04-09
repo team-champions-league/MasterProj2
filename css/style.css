@@ -310,15 +310,17 @@ img, iframe {
 
 /* events page ====== */
 #events {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 #e-list {
   display: block;
   background: silver;
   list-style-type: square;
-  color: indigo;
+  color: navy;
   padding: 10px;
+  margin-bottom: 5px;
+  margin-right: 5px;
 }
 
 #e-list li {

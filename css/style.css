@@ -1,8 +1,8 @@
 /* Team Champions-League, style.css */
 
-/* 
-   We used Modular Scale Minor 3rd, 120% in the Math calculations below.
-   We assumed browser defult font size of 16px.
+/*
+We used Modular Scale Minor 3rd, 120% in the Math calculations below.
+We assumed browser defult font size of 16px.
 */
 
 /* ===== BASE STYLES ==================== */
@@ -15,29 +15,7 @@ ul {
   margin:0;
   padding:0;
   position: absolute;
-}
-/*Create a horizontal list with spacing*/
-li {
-  display:inline-block;
-  float: left;
-  margin-right: 1px;
-}
-/*Style for menu links*/
-li a {
-  display:block;
-  min-width:140px;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #fff;
-  background: #2f3036;
-  text-decoration: none;
-}
-/*Hover state for top level links*/
-li:hover a {
-  background: #19c589;
-}
+
 /*Style for dropdown links*/
 li:hover ul a {
   background: #f3f3f3;
@@ -138,29 +116,52 @@ td {
 .cards {
   width: 30%;
 }
+  
 /**richard's form**/
-
-*{
-  margin: 0px;
-  padding: 0px;
+}
+/*Create a horizontal list with spacing*/
+li {
+  display:inline-block;
+  float: left;
+  margin-right: 1px;
+}
+/*Style for menu links*/
+li a {
+  display:block;
+  min-width:140px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  background: #2f3036;
+  text-decoration: none;
+}
+/*Hover state for top level links*/
+li:hover a {
+  background: #19c589;
+}
+/*Style for dropdown links*/
+li:hover ul a {
+  background: #f3f3f3;
+  color: #2f3036;
+  height: 40px;
+  line-height: 40px;
+}
+/*Hover state for dropdown links*/
+li:hover ul a:hover {
+  background: #19c589;
+  color: #fff;
 }
 
-html {
-  font-size: 1em;  /* 16px, (16px/16px=1em) */
-  line-height: 1.2em;  /* 120% at 19.2px, (19.2/16px=1.2) */
-  padding: 0.5em 0.5em;  /* 8px, (8px/16px=0.5em) */
+/*Hide dropdown links until they are needed*/
+li ul {
+  display: none;
 }
-
-/* setup "font-family" of Sans-Serif */
-body {
-  font-family: "Times New Roman", Georgia, Serif;
-  background-color: whitesmoke;
-}
-
-/* for Responsive Media */
-img, audio, video {
+/*Make dropdown links vertical*/
+li ul li {
   display: block;
-  max-width: 100%;
+  float: none;
 }
 
 /* Nilufer Anlar
@@ -189,33 +190,6 @@ h1 {
   font-size: 1.5em;  /* 24px, (24px/16px=1.5em) */
   line-height: 1.81em;  /* 120% at ~29px, (29px/16px=1.81em) */
   font-weight: 700;  /* for bold effect*/
-}
-
-h2 {
-  font-size: 1.25em;  /* 20px, (20px/16px=1.25em) */
-  line-height: 1.5em;  /* 120% at 24px, (24px/16px=1.15em) */
-  font-weight: 700;  /* for bold */
-  margin: 0.5em 0 0.5em 0;  /* 8px, (8px/16px=0.5em) */
-}
-
-h3 {
-  font-size: 1em;  /* 16px, (16px/16px=1em) */
-  line-height: 1.25em;  /* 20px, (20px/16px=1.25em) */
-  font-weight: 700;  /* for bold */
-  margin: 0.5em 0 0.5em 0;  /* 8px, (8px/16px=0.5em) */
-}
-
-p {
-  font-family: "Times New Roman", Georgia, Serif;
-  font-size: 1em;  /* 16px, (16px/16px=1em) */
-  line-height: 1.2em;  /* 120% at 19.2px, (19.2px/16px=1.2em)*/
-  padding: 0 0 0.25em 0;  /* ~4px, (4px/16px=0.25em) */
-}
-
-img.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 iframe {
@@ -271,12 +245,6 @@ iframe {
   outline: none;
   font-weight: bold;
   transition: 0.4s;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-  background-color: pink;  /* change the color later */
-}
 
 /* style the accordion panel */
 .panel{
@@ -284,7 +252,7 @@ iframe {
   background-color: white;
   display: none;
   overflow: hidden;
-}
+  }
 
 #amend {
   font-size: 0.8em;
@@ -334,6 +302,24 @@ iframe {
   font-style: oblique;
 }
 
+html {
+  font-size: 1em;  /* 16px, (16px/16px=1em) */
+  line-height: 1.2em;  /* 120% at 19.2px, (19.2/16px=1.2) */
+  padding: 0.5em 0.5em;  /* 8px, (8px/16px=0.5em) */
+}
+
+/* setup "font-family" of Sans-Serif */
+body {
+  font-family: "Times New Roman", Georgia, Serif;
+  background-color: whitesmoke;
+}
+
+/* for Responsive Media */
+img, audio, video {
+  display: block;
+  max-width: 100%;
+}
+  
 /* cong2018 page ====== */
 #main-cong18 p {
   font-size: 1em;
@@ -373,15 +359,46 @@ iframe {
 }
 
 /* for tablets ====== */
-@media screen and (min-width: 768px) { 
-  /* add styles here */
-} 
 
-/* for desktops and wide screens ====== */
-@media screen and (min-width: 992px) {
+@media screen and (max-width : 760px){
+  /*Make dropdown links appear inline*/
+  ul {
+    position: static;
+    display: none;
+  }
+  /*Create vertical spacing*/
+  li {
+    margin-bottom: 1px;
+  }
+  /*Make all menu links full width*/
+  ul li, li a {
+    width: 100%;
+  }
+  /*Display 'show menu' link*/
+  .show-menu {
+    display:block;
+  }
+}
+
   /* add styles here */
 }
-  
+
 /* ===== STATE STYLES =================== */
 
-/* ====== end of style.css ============== */
+
+ /* for desktops and wide screens ====== */
+  @media screen and (min-width: 760px) {
+    
+  }
+
+  /* for desktops and wide screens ====== */
+  @media screen and (min-width: 992px) {
+    
+  }
+
+  /* ===== STATE STYLES =================== */
+
+  /* we need some styles below */
+
+  /* ====== end of style.css ============== */
+

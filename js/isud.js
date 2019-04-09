@@ -16,7 +16,8 @@ function myFunction() {
   }
 }
 
-// acctivate the accordion
+
+// activate the accordion
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -63,6 +64,5 @@ function validateForm() {
     return false;
   } else {
     alert("Thank you for registering!");
-
-    }
   }
+}

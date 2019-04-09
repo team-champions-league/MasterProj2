@@ -14,18 +14,20 @@
 
 
 
-/* Nilufer Anlar - Styles for the About pages listed below */
+/* Nilufer Anlar
+   Styles my pages are listed below =================== */
 
-#main-about {
+/* set up font-family and other common styles */
+#body-about, #body-const, #body-pubs, #body-events, #body-cong18 {
+  font-family: "Times New Roman", Georgia, Serif;
+  background-color: whitesmoke;
+  margin: 10px;
+}
+
+#main {
   font-size: 1em;  /* 16px, (16px/16px=1em) */
   line-height: 1.2em;  /* 120% at 19.2px, (19.2/16px=1.2) */
   padding: 0.5em 0.5em;  /* 8px, (8px/16px=0.5em) */
-}
-
-/* setup "font-family" of Sans-Serif */
-#body-about {
-  font-family: "Times New Roman", Georgia, Serif;
-  background-color: whitesmoke;
 }
 
 /* for Responsive Media */
@@ -73,7 +75,7 @@ iframe {
   width: 95%;  /* for better user experience */
 }
 
-/* Nilufer Anlar - about page */
+/* about page ====== */
 #umind {
   width: 40%; /* for mobile friendly */
   float: right;
@@ -98,11 +100,7 @@ iframe {
   margin-right: 5px;
 }
 
-/* Nilufer Anlar - constitution page */
-#body-const {
-  margin: 10px;
-}
-
+/* constitution page ====== */
 #constitution p {
   color: royalblue; 
   font-style: oblique ;
@@ -131,7 +129,7 @@ iframe {
   background-color: pink;  /* change the color later */
 }
 
-/* Style the accordion panel. Note: hidden by default */
+/* style the accordion panel */
 .panel{
   padding: 0 12px;
   background-color: white;
@@ -146,11 +144,7 @@ iframe {
   margin-top: 1em;  /* at 16px */
 }
 
-/* Nilufer Anlar publications page */
-#body-pubs {
-  margin: 10px;
-}
-
+/* publications page ====== */
 .pub h2 {
   font-style: oblique;
   color: green;
@@ -167,6 +161,7 @@ iframe {
 
 #dujournal h2 {
   font-size: 1.5em;
+  line-height: 1.8em;  /* at 120%, 28.8px, 28.8/16=1.8em */
   color: red;
 }
 
@@ -174,7 +169,7 @@ iframe {
   font-style: oblique;
 }
 
-/* Nilufer Anlar - events page */
+/* events page ====== */
 #e-list {
   background: silver;
   list-style-type: square;
@@ -190,7 +185,7 @@ iframe {
   font-style: oblique;
 }
 
-/* Nilufer Anlar cong2018 page */
+/* cong2018 page ====== */
 #main-cong18 p {
   font-size: 1em;
   line-height: 1.2em;
@@ -210,7 +205,6 @@ iframe {
   height: 200px;
   float: right;
 }
-
 
 /* ===== MODULAR STYLES ================= */
 

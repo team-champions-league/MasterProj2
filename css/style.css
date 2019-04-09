@@ -193,17 +193,8 @@ iframe {
   color: purple;
 }
 
-#cpic1, #cpic3, #cpic4, #cpic5 {
-  width: 240px;
-  height: 160px;
-  float: left;
-  margin-right: 10px;
-}
-
-#cpic2 {
-  width: 300px;
-  height: 200px;
-  float: right;
+#cpic2, #cpic3, #cpic4, #cpic5  {
+  width: 50%;
 }
 
 /* ===== MODULAR STYLES ================= */

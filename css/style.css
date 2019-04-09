@@ -337,47 +337,48 @@ img, iframe {
   font-size: 1em;
   line-height: 1.2em;
   font-style: normal;
-  color: purple;
+  color: navy;
 }
 
-.2018pic2 {  /* Nilufer Anlar */
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-  }
+#sthemes p {
+  font-size: 0.9em;
+  font-weight: 700;
+  font-style: oblique;
+  color: navy;
+}
+
 #peru {
   width: 95%;  /* mobile friendly */
-  position: absolute;
+  height: 150px;
+  position: relative;
+  float: left;
+  margin-right: 7px;
 }
 
 #cpic2 {
   width: 30%;
-  border: solid red;
-  transform: translate(150px, 100px) rotate(10deg);
+  border: solid gray;
+  transform: translate(20px, 40px) rotate(10deg);
 }
 
 #cpic3 {
   width: 30%;
   border: solid blue;
-  transform: rotate(-10deg);
+  transform: translate(220px, -45px) rotate(-10deg);
 }
 
 #cpic4 {
-  width: 30%;
-  border: solid red;
-  transform: translate(50px, 100px) rotate(10deg);
-}
-
-#cpic3 {
-  width: 30%;
-  border: solid blue;
-  transform: rotate(-10deg);
+  width: 35%;
+  border: solid green;
+  transform: translate(20px, 35px) rotate(10deg);
+  margin-bottom: 20px;
 }
 
 #cpic5 {
-  width: 30%;
-  border: solid blue;
-  transform: rotate(-10deg);
+  width: 35%;
+  border: solid brown;
+  transform: translate(220px, -65px) rotate(-10deg);
+  margin-bottom: 20px;
 }
 
 
@@ -390,24 +391,25 @@ img, iframe {
 
 /* for tablets ====== */
 @media screen and (min-width: 760px) {
-  /* Nilufer Anlar */
-  .2018pic2 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
+  /* Nilufer Anlar */  
   #umind, #tman, #athens {
   width: 25%; 
   }
   
   #peru {
-    width: 300px;
-    height: 200px;
+    width: 425px;
+    height: 293px;
+    margin: 10px 10px;
+  }
+  
+  #sthemes {
+    float: left;
   }
   
   #cpic2, #cpic3, #cpic4, #cpic5  {
-    width: 30%;
+    width: 20%;
+    transform: none;
+    float: right;
   }
   .accordion {  /* Nilufer Anlar */
     text-align: center;  /* center it at bigger screens */

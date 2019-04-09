@@ -1,9 +1,11 @@
 /* Team Champions-League, style.css */
 
-/* 
-  We used Modular Scale Minor 3rd, 120% in the Math calculations below.
-  We assumed browser defult font size of 16px.
+/*
+We used Modular Scale Minor 3rd, 120% in the Math calculations below.
+We assumed browser defult font size of 16px.
 */
+
+/* ===== BASE STYLES ==================== */
 
 /* Daniel*/
 
@@ -163,19 +165,25 @@ li ul li {
 }
 
 /* Nilufer Anlar
-   Styles for my pages are listed below =================== */
+   Styles my pages are listed below =================== */
 
 /* set up font-family and other common styles */
 #body-about, #body-const, #body-pubs, #body-events, #body-cong18 {
   font-family: "Times New Roman", Georgia, Serif;
   background-color: whitesmoke;
-  
+  margin: 10px;
 }
 
-#main-about, #main-const, #main-pubs, #main-events, #main-cong18 {
+main {
   font-size: 1em;  /* 16px, (16px/16px=1em) */
   line-height: 1.2em;  /* 120% at 19.2px, (19.2/16px=1.2) */
-  margin: 10px;
+  padding: 0.5em 0.5em;  /* 8px, (8px/16px=0.5em) */
+}
+
+/* for Responsive Media */
+img, audio, video {
+  display: block;
+  max-width: 100%;
 }
 
 h1 {
@@ -184,59 +192,35 @@ h1 {
   font-weight: 700;  /* for bold effect*/
 }
 
-h2 {
-  font-size: 1.25em;  /* 20px, (20px/16px=1.25em) */
-  line-height: 1.5em;  /* 120% at 24px, (24px/16px=1.15em) */
-  font-weight: 700;  /* for bold */
-  margin: 0.5em 0 0.5em 0;  /* 8px, (8px/16px=0.5em) */
-}
-
-h3 {
-  font-size: 1em;  /* 16px, (16px/16px=1em) */
-  line-height: 1.25em;  /* 20px, (20px/16px=1.25em) */
-  font-weight: 700;  /* for bold */
-  margin: 0.5em 0 0.5em 0;  /* 8px, (8px/16px=0.5em) */
-}
-
-p {
-  font-family: "Times New Roman", Georgia, Serif;
-  font-size: 1em;  /* 16px, (16px/16px=1em) */
-  line-height: 1.2em;  /* 120% at 19.2px, (19.2px/16px=1.2em)*/
-  padding: 0 0 0.25em 0;  /* ~4px, (4px/16px=0.25em) */
-}
-
-img, iframe {
+iframe {
   position: relative;
-  display: block;
   border: none;
   width: 95%;  /* for better user experience */
 }
 
 /* about page ====== */
 #umind {
-  display: block;
-  width: 35%;
+  width: 40%; /* for mobile friendly */
   float: right;
-  margin-left: 5px;
 }
 
-#qlist p{
-  font-size: 0.8em;
-  font-weight: 700;
+#q-list {
+  list-style-type: square;
+  margin: 5px;
+  padding: 5px;
+}
+
+#q-list li {
+  font-size: 0.9em;
   font-style: oblique;
-  color: darkred;
+  color: mediumblue;
+  margin: 5px; 
 }
 
 #tman {
-  width:35%; /* for mobile friendly */
-  float:left;
+  width: 50%; /* for mobile friendly */
+  float: left;
   margin-right: 5px;
-}
-
-#athens {
-  width: 35%; /* for mobile friendly */
-  float: right;
-  margin-left: 5px;
 }
 
 /* constitution page ====== */
@@ -260,13 +244,7 @@ img, iframe {
   border: 1px solid maroon;
   outline: none;
   font-weight: bold;
-  transition: 0.3s;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-  background-color: pink;  /* change the color later */
-}
+  transition: 0.4s;
 
 /* style the accordion panel */
 .panel{
@@ -274,7 +252,7 @@ img, iframe {
   background-color: white;
   display: none;
   overflow: hidden;
-}
+  }
 
 #amend {
   font-size: 0.8em;
@@ -309,27 +287,39 @@ img, iframe {
 }
 
 /* events page ====== */
-#events {
-  margin-right: 10px;
-}
-
 #e-list {
-  display: block;
   background: silver;
   list-style-type: square;
   color: indigo;
+  margin-left: 5px;
   padding: 10px;
 }
 
 #e-list li {
-  width: 95%;
   background: gainsboro;
-  display: block;
-  margin: 5px;
+  margin: 10px;
   padding: 5px;
   font-style: oblique;
 }
 
+html {
+  font-size: 1em;  /* 16px, (16px/16px=1em) */
+  line-height: 1.2em;  /* 120% at 19.2px, (19.2/16px=1.2) */
+  padding: 0.5em 0.5em;  /* 8px, (8px/16px=0.5em) */
+}
+
+/* setup "font-family" of Sans-Serif */
+body {
+  font-family: "Times New Roman", Georgia, Serif;
+  background-color: whitesmoke;
+}
+
+/* for Responsive Media */
+img, audio, video {
+  display: block;
+  max-width: 100%;
+}
+  
 /* cong2018 page ====== */
 #main-cong18 p {
   font-size: 1em;
@@ -338,93 +328,77 @@ img, iframe {
   color: purple;
 }
 
-.2018pic2 {  /* Nilufer Anlar */
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-  }
-#peru {
-  width: 95%;  /* mobile friendly */
-  position: absolute;
+#cpic2, #cpic3, #cpic4, #cpic5  {
+  width: 50%;
 }
-
-#cpic2 {
-  width: 30%;
-  border: solid red;
-  transform: translate(150px, 100px) rotate(10deg);
-}
-
-#cpic3 {
-  width: 30%;
-  border: solid blue;
-  transform: rotate(-10deg);
-}
-
-#cpic4 {
-  width: 30%;
-  border: solid red;
-  transform: translate(50px, 100px) rotate(10deg);
-}
-
-#cpic3 {
-  width: 30%;
-  border: solid blue;
-  transform: rotate(-10deg);
-}
-
-#cpic5 {
-  width: 30%;
-  border: solid blue;
-  transform: rotate(-10deg);
-}
-
-
-/* === end of Nilufer Anlar section ====== */
 
 /* ===== MODULAR STYLES ================= */
 
 /* Our MEDIA queries are listed below */
 
+/* the below query has to be min-width!!! */
+
+@media screen and (max-width : 760px){
+  /*Make dropdown links appear inline*/
+  ul {
+    position: static;
+    display: none;
+  }
+  /*Create vertical spacing*/
+  li {
+    margin-bottom: 1px;
+  }
+  /*Make all menu links full width*/
+  ul li, li a {
+    width: 100%;
+  }
+  /*Display 'show menu' link*/
+  .show-menu {
+    display:block;
+  }
+}
 
 /* for tablets ====== */
-@media screen and (min-width: 760px) {
-  /* Nilufer Anlar */
-  .2018pic2 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+@media screen and (max-width : 760px){
+  /*Make dropdown links appear inline*/
+  ul {
+    position: static;
+    display: none;
   }
-  
-  #umind, #tman, #athens {
-  width: 25%; 
+  /*Create vertical spacing*/
+  li {
+    margin-bottom: 1px;
   }
-  
-  #peru {
-    width: 300px;
-    height: 200px;
+  /*Make all menu links full width*/
+  ul li, li a {
+    width: 100%;
   }
-  
-  #cpic2, #cpic3, #cpic4, #cpic5  {
-    width: 30%;
+  /*Display 'show menu' link*/
+  .show-menu {
+    display:block;
   }
-  .accordion {  /* Nilufer Anlar */
-    text-align: center;  /* center it at bigger screens */
-    transition: 0.4s;
 }
 
-
+  /* add styles here */
 }
+
+/* ===== STATE STYLES =================== */
+
+
+ /* for desktops and wide screens ====== */
+  @media screen and (min-width: 760px) {
+    
+  }
 
   /* for desktops and wide screens ====== */
   @media screen and (min-width: 992px) {
-    /* Nilufer Anlar */
-    #umind, #tman, #athens {
-      width: 35%; 
-    } 
-    
-    
     
   }
 
-/* ====== end of style.css ============== */
+  /* ===== STATE STYLES =================== */
+
+  /* we need some styles below */
+
+  /* ====== end of style.css ============== */
 

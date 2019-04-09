@@ -350,6 +350,28 @@ iframe {
 
 /* Our MEDIA queries are listed below */
 
+/* the below query has to be min-width!!! */
+
+@media screen and (max-width : 760px){
+  /*Make dropdown links appear inline*/
+  ul {
+    position: static;
+    display: none;
+  }
+  /*Create vertical spacing*/
+  li {
+    margin-bottom: 1px;
+  }
+  /*Make all menu links full width*/
+  ul li, li a {
+    width: 100%;
+  }
+  /*Display 'show menu' link*/
+  .show-menu {
+    display:block;
+  }
+}
+
 /* for tablets ====== */
 @media screen and (min-width: 768px) { 
   /* add styles here */

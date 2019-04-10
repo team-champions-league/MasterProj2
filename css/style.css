@@ -1,133 +1,70 @@
 /* Team Champions-League, style.css */
 
-/*
-We used Modular Scale Minor 3rd, 120% in the Math calculations below.
-We assumed browser defult font size of 16px.
+/* 
+  We used Modular Scale Minor 3rd, 120% in the Math calculations below.
+  We assumed browser defult font size of 16px.
 */
 
-/* ===== BASE STYLES ==================== */
-
-
-/* Daniel, Richard - you can add to below for your pages */
-
 /* Daniel*/
-/*image*/
-.header{
-  position: relative;
-  height: 80px;
-  margin-left: 40px;
-  padding-bottom: 16px;
-  padding-top: 16px;
-}
-/*TopNan*/
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color: lightgreen;
-  overflow: hidden;
-  text-align: center;
-  padding: 1px;
-  display: flex;
-  justify-content: center;
-  width: 100%;
 
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  display: block;
-  /* color: #f2f2f2; */
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Add an active class to highlight the current page */
-.active {
-  background-color;
-  color: black;
-}
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-  display: none;
-}
-
-/* Dropdown container - needed to position the dropdown content */
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-/* Style the dropdown button to fit inside the topnav */
-.dropdown .dropbtn {
-  font-size: 17px;
-  border: none;
-  outline: none;
-  color: black;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-/* Style the dropdown content (hidden by default) */
-.dropdown-content {
-  display: none;
+/*Strip the ul of padding and list styling*/
+ul {
+  list-style-type:none;
+  margin:0;
+  padding:0;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+
+/*Style for dropdown links*/
+li:hover ul a {
+  background: #f3f3f3;
+  color: #2f3036;
+  height: 40px;
+  line-height: 40px;
+}
+/*Hover state for dropdown links*/
+li:hover ul a:hover {
+  background: #19c589;
+  color: #fff;
 }
 
-/* Style the links inside the dropdown */
-.dropdown-content a {
+/*Hide dropdown links until they are needed*/
+li ul {
+  display: none;
+}
+/*Make dropdown links vertical*/
+li ul li {
+  display: block;
   float: none;
-  color: black;
-  padding: 12px 16px;
+}
+/*Prevent text wrapping*/
+li ul li a {
+  width: auto;
+  min-width: 100px;
+  padding: 0 20px;
+}
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+  display: block;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-/* Add a dark background on topnav links and the dropdown button on hover */
-.topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #555;
-  color: white;
-}
-
-/* Add a grey background to dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Show the dropdown menu when the user moves the mouse over the dropdown button */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: lightgreen;
-  color: black;
+  color: #fff;
+  background: #19c589;
   text-align: center;
+  padding: 10px 0;
+  display: none;
 }
-/*TopNan and footer ends here*/
-
-/*  index */
-body{
-  height: 125vh;
-  background-image: url('http://travelunmasked.com/wp-content/uploads/2014/10/Urban-Cool-City-Graz-Austria-1.jpg');
-  background-size: cover;
-  font-family: sans-serif;
+/*Hide checkbox*/
+input[type=checkbox]{
+  display: none;
 }
-
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+  display: block;
+}
 
 /** mobile registration**/
 
@@ -170,14 +107,14 @@ input[type=tel] {
   box-sizing: border-box;
 }
 
-
-/** mobile registration**/
-
+td {
+  padding-right: 20px;
+}
 
 .cards {
   width: 30%;
 }
-
+  
 /**richard's form**/
 }
 /*Create a horizontal list with spacing*/
@@ -215,11 +152,6 @@ li:hover ul a:hover {
   color: #fff;
 }
 
-<
-/* ===== LAYOUT STYLES ================== */
-
-/* team members add their styles below for their pages */
-
 /*Hide dropdown links until they are needed*/
 li ul {
   display: none;
@@ -231,585 +163,272 @@ li ul li {
 }
 
 /* Nilufer Anlar
-Styles my pages are listed below =================== */
-
+   Styles for my pages are listed below =================== */
 
 /* set up font-family and other common styles */
 #body-about, #body-const, #body-pubs, #body-events, #body-cong18 {
   font-family: "Times New Roman", Georgia, Serif;
   background-color: whitesmoke;
+  
+}
+
+#main-about, #main-const, #main-pubs, #main-events, #main-cong18 {
+  font-size: 1em;  /* 16px, (16px/16px=1em) */
+  line-height: 1.2em;  /* 120% at 19.2px, (19.2/16px=1.2) */
   margin: 10px;
 }
 
-
-html {
-  font-size: 1em;
-  /* 16px, (16px/16px=1em) */
-  line-height: 1.2em;
-  /* 120% at 19.2px, (19.2/16px=1.2) */
-  padding: 0.5em 0.5em;
-  /* 8px, (8px/16px=0.5em) */
-}
-
-/* setup "font-family" of Sans-Serif */
-
-body {
-  font-family: "Times New Roman", Georgia, Serif;
-  background-color: whitesmoke;
-}
-
-form {
-  width: 95%;
-  margin: auto;
-  padding: 10px;
-  background-color: #ccc;
-  color: #1d2731;
-  border-radius: 4px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-
-#main {
-  font-size: 1em;  /* 16px, (16px/16px=1em) */
-  line-height: 1.2em;  /* 120% at 19.2px, (19.2/16px=1.2) */
-  padding: 0.5em 0.5em;  /* 8px, (8px/16px=0.5em) */
-}
-
-
-/* for Responsive Media */
-
-img,
-audio,
-video {
-  display: block;
-  max-width: 100%;
-}
-
 h1 {
-  font-size: 1.5em;
-  /* 24px, (24px/16px=1.5em) */
-  line-height: 1.81em;
-  /* 120% at ~29px, (29px/16px=1.81em) */
-  font-weight: 700;
-  /* for bold effect*/
+  font-size: 1.5em;  /* 24px, (24px/16px=1.5em) */
+  line-height: 1.81em;  /* 120% at ~29px, (29px/16px=1.81em) */
+  font-weight: 700;  /* for bold effect*/
 }
-
 
 h2 {
-  font-size: 1.25em;
-  /* 20px, (20px/16px=1.25em) */
-  line-height: 1.5em;
-  /* 120% at 24px, (24px/16px=1.15em) */
-  font-weight: 700;
-  /* for bold */
-  margin: 0.5em 0 0.5em 0;
-  /* 8px, (8px/16px=0.5em) */
+  font-size: 1.25em;  /* 20px, (20px/16px=1.25em) */
+  line-height: 1.5em;  /* 120% at 24px, (24px/16px=1.15em) */
+  font-weight: 700;  /* for bold */
+  margin: 0.5em 0 0.5em 0;  /* 8px, (8px/16px=0.5em) */
 }
 
 h3 {
-  font-size: 1em;
-  /* 16px, (16px/16px=1em) */
-  line-height: 1.25em;
-  /* 20px, (20px/16px=1.25em) */
-  font-weight: 700;
-  /* for bold */
-  margin: 0.5em 0 0.5em 0;
-  /* 8px, (8px/16px=0.5em) */
+  font-size: 1em;  /* 16px, (16px/16px=1em) */
+  line-height: 1.25em;  /* 20px, (20px/16px=1.25em) */
+  font-weight: 700;  /* for bold */
+  margin: 0.5em 0 0.5em 0;  /* 8px, (8px/16px=0.5em) */
 }
 
 p {
   font-family: "Times New Roman", Georgia, Serif;
-  font-size: 1em;
-  /* 16px, (16px/16px=1em) */
-  line-height: 1.2em;
-  /* 120% at 19.2px, (19.2px/16px=1.2em)*/
-  padding: 0 0 0.25em 0;
-  /* ~4px, (4px/16px=0.25em) */
+  font-size: 1em;  /* 16px, (16px/16px=1em) */
+  line-height: 1.2em;  /* 120% at 19.2px, (19.2px/16px=1.2em)*/
+  padding: 0 0 0.25em 0;  /* ~4px, (4px/16px=0.25em) */
 }
 
-/**registration form**/
-
-.reg-header {
-  text-align: center;
-}
-
-.info-header {
-  text-align: center;
-}
-
-input:focus {
-  background-color: lightyellow;
-}
-
-sup {
-  color: #ff4c4c;
-}
-
-input[type="submit"]:hover {
-  background-color: #ff4c4c;
-  color: white;
-}
-
-input[type="reset"]:hover {
-  background-color: #ff4c4c;
-  color: white;
-}
-select {
-    width: 100%;
-    padding: 1px 6px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #000;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  input[type=text] {
-    width: 100%;
-    padding: 6px 6px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #000;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  input[type=email] {
-    width: 100%;
-    padding: 6px 6px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #000;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  input[type=tel] {
-    width: 100%;
-    padding: 6px 6px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #000;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  input[type="submit"] {
-    width: 100%;
-    padding: 8px 6px;
-    font-size: .80em;
-    border-radius: 4px;
-    background-color: darkgray;
-    border: 1px solid black;
-    margin-bottom: 10px;
-  }
-  input[type="reset"] {
-    width: 40%;
-    padding: 4px 10px;
-    margin-left: 30%;
-    margin-right;
-    30%;
-    font-size: .80em;
-    border-radius: 4px;
-    background-color: darkgray;
-    border: 1px solid black;
-  }
-  table {
-    width: 75%;
-    margin: auto;
-    text-align: left;
-  }
-  td {
-    padding: 10px;
-  }
-  .info {
-    text-align: left;
-    border: 1px solid black;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    padding: 0px 10px;
-  }
-  .days {
-    text-align: center;
-    border: 1px solid black;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    padding: 0px 10px;
-  }
-  .days-inner {
-    width: 95%;
-    margin: 0px auto 10px auto;
-    border-bottom: 1px solid black;
-  }
-  .cards {
-    width: 50%;
-    margin:auto;
-    padding-bottom: 10px;
-  }
-/** end of reg form**/
-
-
-
-img.center {
+img, iframe {
+  position: relative;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-iframe {
-  position: relative;
-  border: 1px solid black;
-  width: 95%;
-  /* for better user experience */
-}
-
-#footer {
-  width: 100%;
-  background-color: gray;
-  font-size: 0.75em;
-  /* 12px */
-  text-align: center;
-  margin: 1em 0;
-  padding: 0.25em 0;
-  /* 4px */
-
-iframe {
-  position: relative;
   border: none;
   width: 95%;  /* for better user experience */
 }
 
 /* about page ====== */
 #umind {
-  width: 40%; /* for mobile friendly */
+  display: block;
+  width: 35%;
   float: right;
+  margin-left: 5px;
 }
 
-#q-list {
-  list-style-type: square;
-  margin: 5px;
-  padding: 5px;
-}
-
-#q-list li {
-  font-size: 0.9em;
+#qlist p{
+  font-size: 0.8em;
+  font-weight: 700;
   font-style: oblique;
-  color: mediumblue;
-  margin: 5px;
+  color: darkred;
 }
 
 #tman {
-  width: 50%; /* for mobile friendly */
-  float: left;
+  width:35%; /* for mobile friendly */
+  float:left;
   margin-right: 5px;
+}
+
+#athens {
+  width: 35%; /* for mobile friendly */
+  float: right;
+  margin-left: 5px;
 }
 
 /* constitution page ====== */
 #constitution p {
-  color: royalblue;
+  color: royalblue; 
   font-style: oblique ;
-
 }
 
 /* use accordion button for the articles */
-
-
 .button {
   display: block;
 }
-
 
 .accordion {
   background-color: #eee;
   color: #444;
   cursor: pointer;
-
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  /* center it at bigger screens */
-  border: 1px solid red;
-
   padding: 10px;
   width: 98%;
   text-align: left;  /* center it at bigger screens */
   border: 1px solid maroon;
   outline: none;
-
   font-weight: bold;
-  transition: 0.4s;
-
-
-  /* style the accordion panel */
-  .panel{
-    padding: 0 12px;
-    background-color: white;
-    display: none;
-    overflow: hidden;
-
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-
-.active,
-.accordion:hover {
-  background-color: pink;
-  /* change the color later */
+  transition: 0.3s;
 }
 
-/* Style the accordion panel. Note: hidden by default */
-
-.panel {
-  padding: 18px 0;
-  /* or 0 18px ??? */
-  background-color: white;
-  /* ??? */
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: pink;  /* change the color later */
+}
 
 /* style the accordion panel */
 .panel{
   padding: 0 12px;
   background-color: white;
-
   display: none;
   overflow: hidden;
+}
 
-  }
+#amend {
+  font-size: 0.8em;
+  color: royalblue;
+  font-style: oblique;
+  margin-top: 1em;  /* at 16px */
+}
 
-  #amend {
-    font-size: 0.8em;
-    color: royalblue;
-    font-style: oblique;
-    margin-top: 1em;  /* at 16px */
-  }
+/* publications page ====== */
+.pub h2 {
+  font-style: oblique;
+  color: green;
+  margin-bottom: 1px;
+}
 
-  /* publications page ====== */
-  .pub h2 {
-    font-style: oblique;
-    color: green;
-    margin-bottom: 1px;
-  }
+#pub1, #pub2, #pub3, #pub4, #pub5 {
+  background-color: mintcream;
+}
+ 
+#dujournal {
+  background-color: ghostwhite;
+}
 
-  #pub1, #pub2, #pub3, #pub4, #pub5 {
-    background-color: mintcream;
-  }
+#dujournal h2 {
+  font-size: 1.5em;
+  line-height: 1.8em;  /* at 120%, 28.8px, 28.8/16=1.8em */
+  color: red;
+}
 
-  #dujournal {
-    background-color: ghostwhite;
-  }
+#dujournal a {
+  font-style: oblique;
+}
 
-  #dujournal h2 {
-    font-size: 1.5em;
-    line-height: 1.8em;  /* at 120%, 28.8px, 28.8/16=1.8em */
-    color: red;
-  }
+/* events page ====== */
+#events {
+  margin-right: 5px;
+}
 
-  #dujournal a {
-    font-style: oblique;
-  }
+#e-list {
+  display: block;
+  background: silver;
+  list-style-type: square;
+  color: navy;
+  padding: 10px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
 
-  /* events page ====== */
-  #e-list {
-    background: silver;
-    list-style-type: square;
-    color: indigo;
-    margin-left: 5px;
-    padding: 10px;
-  }
+#e-list li {
+  width: 95%;
+  background: gainsboro;
+  display: block;
+  margin: 5px;
+  padding: 5px;
+  font-style: oblique;
+}
 
-  #e-list li {
-    background: gainsboro;
-    margin: 10px;
-    padding: 5px;
-    font-style: oblique;
-  }
+/* cong2018 page ====== */
+#main-cong18 p {
+  font-size: 1em;
+  line-height: 1.2em;
+  font-style: normal;
+  color: navy;
+}
 
-  html {
-    font-size: 1em;  /* 16px, (16px/16px=1em) */
-    line-height: 1.2em;  /* 120% at 19.2px, (19.2/16px=1.2) */
-    padding: 0.5em 0.5em;  /* 8px, (8px/16px=0.5em) */
-  }
+#sthemes p {
+  font-size: 0.9em;
+  font-weight: 700;
+  font-style: oblique;
+  color: navy;
+}
 
-  /* setup "font-family" of Sans-Serif */
-  body {
-    font-family: "Times New Roman", Georgia, Serif;
-    background-color: whitesmoke;
-  }
+#peru {
+  width: 95%;  /* mobile friendly */
+  height: 150px;
+  position: relative;
+  float: left;
+  margin-right: 7px;
+}
 
-  /* for Responsive Media */
-  img, audio, video {
-    display: block;
-    max-width: 100%;
-  }
+#cpic2 {
+  width: 30%;
+  border: solid gray;
+  transform: translate(20px, 40px) rotate(10deg);
+}
 
+#cpic3 {
+  width: 30%;
+  border: solid blue;
+  transform: translate(220px, -45px) rotate(-10deg);
+}
 
-  /* cong2018 page ====== */
-  #main-cong18 p {
-    font-size: 1em;
-    line-height: 1.2em;
-    font-style: normal;
-    color: purple;
+#cpic4 {
+  width: 35%;
+  border: solid green;
+  transform: translate(20px, 35px) rotate(10deg);
+  margin-bottom: 20px;
+}
 
-@media screen and (min-width: 768px) {
-  /* add styles here */
-  /**Styles for registration form**/
-  form {
-    width: 70%;
-    margin: auto;
-  }
-  input[type="submit"] {
-    width: 70%;
-    margin-right: 15%;
-    margin-left: 15%;
-  }
-  input[type="reset"] {
-    width: 30%;
-    margin-right: 35%;
-    margin-left: 35%;
-  }
-  h1 {
-    font-size: 1.75em;
-  }
+#cpic5 {
+  width: 35%;
+  border: solid brown;
+  transform: translate(220px, -65px) rotate(-10deg);
+  margin-bottom: 20px;
 }
 
 
+/* === end of Nilufer Anlar section ====== */
 
-/**end of registration form**/
+/* ===== MODULAR STYLES ================= */
 
-/* for desktops and wide screens ====== */
+/* Our MEDIA queries are listed below */
 
-@media screen and (min-width: 992px) {
-  /* add styles here */
-  /**Styles for registration form**/
-  form {
-    width: 40%;
-    margin: auto;
-    padding: 20px;
+
+/* for tablets ====== */
+@media screen and (min-width: 760px) {
+  /* Nilufer Anlar */  
+  #umind, #tman, #athens {
+  width: 25%; 
   }
-  input[type="submit"] {
-    width: 60%;
-    margin-right: 20%;
-    margin-left: 20%;
+  
+  #peru {
+    width: 425px;
+    height: 293px;
+    margin: 10px 10px;
   }
-  input[type="reset"] {
-    width: 20%;
-    margin-right: 40%;
-    margin-left: 40%;
+  
+  #sthemes {
+    float: left;
   }
-  .info {
-    padding: 20px;
-  }
-  .days {
-    padding: 20px;
-  }
-  /**end of registration form**/
-}
-
-
-@media screen and (max-width : 760px){
-  /*Make dropdown links appear inline*/
-  ul {
-    position: static;
-    display: none;
-
-  }
-
+  
   #cpic2, #cpic3, #cpic4, #cpic5  {
-    width: 50%;
+    width: 20%;
+    transform: none;
+    float: right;
   }
+  .accordion {  /* Nilufer Anlar */
+    text-align: center;  /* center it at bigger screens */
+    transition: 0.4s;
+}
 
-  /* ===== MODULAR STYLES ================= */
 
-  /* Our MEDIA queries are listed below */
+}
 
-  /* the below query has to be min-width!!! */
-
-  @media screen and (max-width : 760px){
-    /*Make dropdown links appear inline*/
-    ul {
-      position: static;
-      display: none;
-    }
-    /*Create vertical spacing*/
-    li {
-      margin-bottom: 1px;
-    }
-    /*Make all menu links full width*/
-    ul li, li a {
-      width: 100%;
-    }
-    /*Display 'show menu' link*/
-    .show-menu {
-      display:block;
-    }
+  /* for desktops and wide screens ====== */
+  @media screen and (min-width: 992px) {
+    /* Nilufer Anlar */
+    #umind, #tman, #athens {
+      width: 35%; 
+    } 
+    
+    
+    
   }
-
-  /* for tablets ====== */
-
-  @media screen and (max-width : 760px){
-    /*Make dropdown links appear inline*/
-    ul {
-      position: static;
-      display: none;
-    }
-    /*Create vertical spacing*/
-    li {
-      margin-bottom: 1px;
-    }
-    /*Make all menu links full width*/
-    ul li, li a {
-      width: 100%;
-    }
-    /*Display 'show menu' link*/
-    .show-menu {
-      display:block;
-    }
-  }
-
-
-/* ===== STATE STYLES =================== */
-
-
-/* we need some styles below */
 
 /* ====== end of style.css ============== */
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (min-width: 600px) {
-  .topnav a:not(:first-child), .dropdown .dropbtn {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon.
-This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-
-@media screen and (min-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-
-
-    /* for ipod and wide screens ====== */
-    @media screen and (min-width: 760px) {
-      .topnav.responsive .dropdown {float: none;}
-      .topnav.responsive .dropdown-content {position: relative;}
-      .topnav.responsive .dropdown .dropbtn {
-        display: block;
-        width: 100%;
-        text-align: left;
-      }
-    }
-
-    /* ===== STATE STYLES =================== */
-
-    /* we need some styles below */
-
-    /* ====== end of style.css ============== */
-
-    /* ====== end of style.css ============== */

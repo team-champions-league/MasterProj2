@@ -345,6 +345,7 @@ img, iframe {
   font-weight: 700;
   font-style: oblique;
   color: navy;
+  margin-left: 5px;
 }
 
 #peru {
@@ -359,31 +360,30 @@ img, iframe {
 #cpic2 {
   width: 30%;
   border: solid gray;
-  transform: translate(20px, 40px) rotate(10deg);
+  /* transform: translate(20px, 40px) rotate(10deg); NOT working without full normalize */
 }
 
 #cpic3 {
   width: 30%;
   border: solid blue;
-  transform: translate(220px, -45px) rotate(-10deg);
+  /* transform: translate(220px, -45px) rotate(-10deg); NOT working without full normalize */
 }
 
 #cpic4 {
   width: 35%;
   border: solid green;
-  transform: translate(20px, 35px) rotate(10deg);
-  margin-bottom: 20px;
+  /* transform: translate(20px, 35px) rotate(10deg); NOT working without full normalize */*/
+  margin-bottom: 10px;
 }
 
 #cpic5 {
   width: 35%;
   border: solid brown;
-  transform: translate(220px, -65px) rotate(-10deg);
-  margin-bottom: 20px;
+  /* transform: translate(220px, -55px) rotate(-10deg); NOT working without full normalize */
+  margin-bottom: 10px;
 }
 
-
-/* === end of Nilufer Anlar section ====== */
+/* end of Nilufer Anlar section ====== */
 
 /* ===== MODULAR STYLES ================= */
 

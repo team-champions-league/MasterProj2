@@ -13,72 +13,90 @@
 
 <body>
   <header>
-    <div id="logo">
-      <img src="" alt="">
+  </div>
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">About
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="about.html">About ISUD</a>
+        <a href="constitution.html">Constitution</a>
+        <a href="publications.html">Publications</a>
+      </div>
     </div>
-    <ul id="navbar">
-      <li><a herf="#">Home</a></li>
-      <li><a herf="#">About Us</a></li>
-      <li><a herf="#">Past Events</a></li>
-    </ul>
-  </header>
-  <main>
-    <form name="myForm" action="get" onsubmit="return validateForm()" method="post" autocomplete="on">
-      <div class="reg-header">
-        <h1>Event Registration</h1>
-
+    <div class="dropdown">
+      <button class="dropbtn">Events
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="register.html">Upcoming Congress</a>
+        <a href="cong2018.html">2018 Congress</a>
+        <a href="events.html">Past Events</a>
+        <a href="https://www.youtube.com/user/hermesnow/playlists">Videos</a>
       </div>
-      <div class="info">
-        <div class="info-header">
+    </div>
+
+  </div>
+</header>
+<main>
+  <form name="myForm" action="get" onsubmit="return validateForm()" method="post" autocomplete="on">
+    <div class="reg-header">
+      <h1>Event Registration</h1>
+
+    </div>
+    <div class="info">
+      <div class="info-header">
         <h2>INFORMATION</h2>
-          </div>
+      </div>
 
-        <label for="title">Title:</label>
-        <select name="title">
-          <option value="Mr">Mr.</option>
-          <option value="Mrs">Mrs.</option>
-          <option value="Miss">Miss</option>
-          <option value="Dr">Dr.</option>
-        </select>
-        <label for="fname">First Name<sup>*</sup></label><input type="text" name="fname" id="fname" placeholder="first name">
-        <label for="lname">Last Name<sup>*</sup></label><input type="text" name="lname" id="lname" placeholder="last name">
-        <label for="email">Email<sup>*</sup></label><input type="email" name="email" id="email" placeholder="email">
-        <label for="tel">Phone</label><input type="tel" name="Phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+      <label for="title">Title:</label>
+      <select name="title">
+        <option value="Mr">Mr.</option>
+        <option value="Mrs">Mrs.</option>
+        <option value="Miss">Miss</option>
+        <option value="Dr">Dr.</option>
+      </select>
+      <label for="fname">First Name<sup>*</sup></label><input type="text" name="fname" id="fname" placeholder="first name">
+      <label for="lname">Last Name<sup>*</sup></label><input type="text" name="lname" id="lname" placeholder="last name">
+      <label for="email">Email<sup>*</sup></label><input type="email" name="email" id="email" placeholder="email">
+      <label for="tel">Phone</label><input type="tel" name="Phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+    </div>
+    <div class="days">
+      <div class="days-inner">
+        <h3>Choose Your Days</h3>
+        <table>
+          <tr>
+            <td>Saturday:</td>
+            <td>$100.00</td>
+            <td><input type="radio" id="sat" name="sat" value="Saturday" checked></td>
+          </tr>
+          <tr>
+            <td>Sunday:</td>
+            <td>$100.00</td>
+            <td><input type="radio" id="sun" name="sun" value="Sunday"></td>
+          </tr>
+          <tr>
+            <td>Both Days:</td>
+            <td>$180.00</td>
+            <td><input type="radio" id="both" name="both" value="both days"></td>
+          </tr>
+        </table>
       </div>
-      <div class="days">
-        <div class="days-inner">
-          <h3>Choose Your Days</h3>
-          <table>
-            <tr>
-              <td>Saturday:</td>
-              <td>$100.00</td>
-              <td><input type="radio" id="sat" name="sat" value="Saturday" checked></td>
-            </tr>
-            <tr>
-              <td>Sunday:</td>
-              <td>$100.00</td>
-              <td><input type="radio" id="sun" name="sun" value="Sunday"></td>
-            </tr>
-            <tr>
-              <td>Both Days:</td>
-              <td>$180.00</td>
-              <td><input type="radio" id="both" name="both" value="both days"></td>
-            </tr>
-          </table>
-        </div>
-        <h4>Payment Methods</h4>
-        <img src="images/cards.png" alt="cards" class="cards">
-      </div>
-      <div class="buttons">
-        <input type="submit" id="submit" value="REGISTER NOW">
-        <input type="reset" id="reset" value="RESET">
-      </div>
-    </form>
-    <footer>
-      <p>Footer content goes here.</p>
-    </footer>
-  </main>
+      <h4>Payment Methods</h4>
+      <img src="media/cards.png" alt="cards" class="cards">
+    </div>
+    <div class="buttons">
+      <input type="submit" id="submit" value="REGISTER NOW">
+      <input type="reset" id="reset" value="RESET">
+    </div>
+  </form>
+  <div class="footer">
+    <p>Posted by: ISUD</p>
+    <p>Contact information: <a href="mailto:someone@example.com">isud2018@gmail.com</a>.</p>
+  </div>
+</main>
 </body>
-  
-</html>
 
+</html>

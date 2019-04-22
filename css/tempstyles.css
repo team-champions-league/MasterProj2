@@ -11,27 +11,29 @@ We assumed browser defult font size of 16px.
 /*===========================================================DANIEL CSS START==================================================*/
 /*===========================================================DANIEL CSS START==================================================*/
 
-/*TopNan*/
+/*TopNav*/
 
 /* Add a black background color to the top navigation */
 
 
 .header {
     float: top;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 1em;  /* 16px, (16px/16px=1em) */
+    padding-bottom: 1em;  /* 16px, (16px/16px=1em) */
     text-align: center;
   }
   .topnav {
-  background-color:  lightgreen;
+  background-color: silver;  /* Nelly changed color */
   overflow: hidden;
   justify-content: center;
-  
+  font-weight: 700;  /* Nelly made it bold */
 }
 
-#hm-body{
-    background-image: url("peru.png");
-    
+#hm-pg{  /* NHA centered the image */
+  background-image: url("../media/graz.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: contain; 
 }
 
 /* Style the links inside the navigation bar */
@@ -40,9 +42,10 @@ We assumed browser defult font size of 16px.
   float: left;
   display: block;
   text-align: center;
-  padding: 14px 16px;
+  padding: 1em 1em;  /* Nelly fixed the bottom space issue */
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1em;  /* 16px, (16px/16px=1em) */
+  line-height: 1.2em;  /* at 120%, Nelly fixed the bottom space issue */
 }
 
 /* Add an active class to highlight the current page */
@@ -65,11 +68,11 @@ We assumed browser defult font size of 16px.
 /* Style the dropdown button to fit inside the topnav */
 
 .dropdown .dropbtn {
-  font-size: 17px;
+  font-size: 1em;  /* 16px, (16px/16px=1em) */
   border: none;
   outline: none;
   color: black;
-  padding: 14px 16px;
+  padding: 1em 1em;  /* 16px, (16px/16px=1em) */
   background-color: inherit;
   font-family: inherit;
   margin: 0;
@@ -82,7 +85,7 @@ We assumed browser defult font size of 16px.
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5em 1em 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -91,7 +94,7 @@ We assumed browser defult font size of 16px.
 .dropdown-content a {
   float: none;
   color: black;
-  padding: 12px 16px;
+  padding: 0.75em 1em;
   text-decoration: none;
   display: block;
   text-align: left;
@@ -119,30 +122,31 @@ We assumed browser defult font size of 16px.
 }
 
 .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
+  position: relative;
   width: 100%;
-  background-color: lightgreen;
+  background-color: silver;  /* Nelly changed the color */
   color: black;
   text-align: center;
-
+  margin: 0 auto;
+  padding: 5px;
+  clear: both; /* Nelly fixed the footer. Daniel, pls do NOT change this */
 }
 
+/* Nelly: mobile logo NOT working, Daniel needs to fix it */
 #isud-img {
   width: 120px;
   height: 120px;
-  left:45%;
+  left: 45%;
 }
 
 #hm-pg {
   text-align: center;
 }
 #hm-pg p {
-  font-size: 20px;
+  font-size: 1.25em;  /* 20px, (20px/16px=1em) */
 }
 #hm-head {
-  font-size: 50px;
+  font-size: 3em;  /* at 48px, 48/16=3em */
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 700;
 }
@@ -152,8 +156,6 @@ We assumed browser defult font size of 16px.
 /*===========================================================DANIEL CSS END==================================================*/
 
 /*===========================================================NELLY CSS START==================================================*/
-/*===========================================================NELLY CSS START==================================================*/
-/*===========================================================NELLY CSS START==================================================*/
 
 /*
 We used Modular Scale Minor 3rd, 120% in the Math calculations below.
@@ -161,69 +163,44 @@ We assumed browser defult font size of 16px.
 */
 
 /* Nilufer Anlar
-Styles for my pages are listed below =================== */
+  Mobile styles for my pages are listed below =================== */
 
 /* set up font-family and other common styles */
-#body-about,
-#body-const,
-#body-pubs,
-#body-events,
-#body-cong18 {
+#body-about, #body-const, #body-pubs, #body-events, #body-cong18 {
   font-family: "Times New Roman", Georgia, Serif;
   background-color: whitesmoke;
 }
 
-#main-about,
-#main-const,
-#main-pubs,
-#main-events,
-#main-cong18 {
+#main-about, #main-const, #main-pubs, #main-events, #main-cong18 {
   font-size: 1em; /* 16px, (16px/16px=1em) */
   line-height: 1.2em; /* 120% at 19.2px, (19.2/16px=1.2) */
-  margin: 10px;
+  margin: 0.625em 0.625em;  /* at 10px, (10px/16px)=0.625em */
 }
 
-h1 {
-  font-size: 1.5em; /* 24px, (24px/16px=1.5em) */
-  line-height: 1.81em; /* 120% at ~29px, (29px/16px=1.81em) */
-  font-weight: 700; /* for bold effect*/
-}
-
-h2 {
+#main-about h2, #main-const h2, #main-pubs h2, #main-events h2, #main-cong18 h2 {
   font-size: 1.25em; /* 20px, (20px/16px=1.25em) */
   line-height: 1.5em; /* 120% at 24px, (24px/16px=1.15em) */
   font-weight: 700; /* for bold */
   margin: 0.5em 0 0.5em 0; /* 8px, (8px/16px=0.5em) */
 }
 
-h3 {
-  font-size: 1em; /* 16px, (16px/16px=1em) */
-  line-height: 1.25em; /* 20px, (20px/16px=1.25em) */
-  font-weight: 700; /* for bold */
-  margin: 0.5em 0 0.5em 0; /* 8px, (8px/16px=0.5em) */
-}
-
-p {
-  font-family: "Times New Roman", Georgia, Serif;
-  font-size: 1em; /* 16px, (16px/16px=1em) */
-  line-height: 1.2em; /* 120% at 19.2px, (19.2px/16px=1.2em)*/
-  padding: 0 0 0.25em 0; /* ~4px, (4px/16px=0.25em) */
-}
-
-img,
-iframe {
+img, iframe {
   position: relative;
   display: block;
   border: none;
   width: 95%; /* for better user experience */
 }
 
-/* about page ====== */
+/* ====== about page ====================== */
+#main-about p {
+  padding-bottom: 0.625em;  /* at 10px */
+}
+
 #umind {
   display: block;
   width: 35%;
   float: right;
-  margin-left: 5px;
+  margin-left: 0.4em;
 }
 
 #qlist p {
@@ -231,24 +208,30 @@ iframe {
   font-weight: 700;
   font-style: oblique;
   color: darkred;
+  padding-bottom: 0;
 }
 
 #tman {
   width: 35%; /* for mobile friendly */
   float: left;
-  margin-right: 5px;
+  margin-right: 0.4em;
 }
 
 #athens {
   width: 35%; /* for mobile friendly */
   float: right;
-  margin-left: 5px;
+  margin-left: 0.4em; 
 }
 
-/* constitution page ====== */
+#qlist {
+  margin: 0.625em;  /* at 10px */
+}
+
+/* ====== constitution page ================= */
 #constitution p {
-  color: royalblue;
+  color: navy;
   font-style: oblique;
+  padding-bottom: 0.5em;
 }
 
 /* use accordion button for the articles */
@@ -260,7 +243,7 @@ iframe {
   background-color: #eee;
   color: #444;
   cursor: pointer;
-  padding: 10px;
+  padding: 0.625em;  /* at 10px */
   width: 98%;
   text-align: left; /* center it at bigger screens */
   border: 1px solid maroon;
@@ -272,12 +255,12 @@ iframe {
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .accordion:hover {
-  background-color: pink; /* change the color later */
+  background-color: gray; /* Nelly changed the color */
 }
 
 /* style the accordion panel */
 .panel {
-  padding: 0 12px;
+  padding: 0 0.75em;
   background-color: white;
   display: none;
   overflow: hidden;
@@ -285,16 +268,25 @@ iframe {
 
 #amend {
   font-size: 0.8em;
-  color: royalblue;
+  color: navy;
   font-style: oblique;
   margin-top: 1em; /* at 16px */
 }
 
-/* publications page ====== */
+/* ====== publications page ======================= */
 .pub h2 {
+  font-size: 1.1em;
+  line-height: 1.6em; 
   font-style: oblique;
-  color: green;
-  margin-bottom: 1px;
+  color: indigo;
+  margin-bottom: 0;
+  padding-left: 0.625em;
+}
+
+.pub p {
+  padding-bottom: 0.4em;
+  padding-right: 0.625em;
+  padding-left:  0.625em;
 }
 
 #pub1,
@@ -302,27 +294,27 @@ iframe {
 #pub3,
 #pub4,
 #pub5 {
-  background-color: mintcream;
+  background-color: #e6e6e6;
 }
 
 #dujournal {
-  background-color: ghostwhite;
+  background-color: ivory;  /* use different color for the journal */
 }
 
 #dujournal h2 {
-  font-size: 1.5em;
-  line-height: 1.8em; /* at 120%, 28.8px, 28.8/16=1.8em */
-  color: red;
+  font-size: 1.2em;
+  color: firebrick;
 }
 
 #dujournal a {
   font-style: oblique;
+  font-weight: bold;
+  color: darkred;
 }
 
-/* events page ====== */
+/* ====== events page ======================= */
 #events {
-  margin-right: 5px;
-  padding-bottom: 80px;
+  padding-bottom: 0.625em;
 }
 
 #e-list {
@@ -330,39 +322,41 @@ iframe {
   background: silver;
   list-style-type: square;
   color: navy;
-  padding: 10px;
-  margin-bottom: 5px;
-  margin-right: 5px;
+  padding: 0.625em;
+  margin-bottom: 0.4em;
+  margin-right: 0.4em;
 }
 
 #e-list li {
-  width: 95%;
   background: gainsboro;
   display: block;
-  margin: 5px;
-  padding: 5px;
+  margin: 0.4em;
+  padding: 0.4em;
   font-style: oblique;
 }
 
-/* cong2018 page ====== */
-#cong-cong18 p {
+/* ====== cong2018 page ====================== */
+#main-cong18 p {
   font-size: 1em;
   line-height: 1.2em;
   font-style: normal;
-  color: navy;
+  color: black;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
 }
 
 #sthemes {
-  margin: 5px 5px; /* put some indent for emphasis */
+  margin: 0.4em 0.4em; /* some indent for emphasis */
 }
 
 #st-list {
   list-style-type: square;
   font-size: 0.9em;
-  font-weight: 700;
+  font-weight: 500;
   font-style: oblique;
   color: navy;
-  margin: 10px 10px; /* put some indent for emphasis */
+  margin: 0.625em 0.625em; /* some indent for emphasis */
+  padding-left: 0.625em;
 }
 
 #peru {
@@ -371,46 +365,14 @@ iframe {
   position: relative;
   float: left;
   margin-right: 7px;
-  margin-bottom: 5px;
+  margin-bottom: 0.4em;
 }
 
-#secondset {
-  transform: translate(220px, -230px);
-}
+/* === end of Nilufer Anlar, her media queries listed later ======= */
 
-#cpic2 {
-  width: 45%;
-  border: solid gray;
-  /* transform: translate(20px, 40px) rotate(10deg); NOT working without full normalize */
-}
+/*============== NELLY CSS END ==================================================*/
 
-#cpic3 {
-  width: 45%;
-  border: solid blue;
-  /* transform: translate(220px, -45px) rotate(-10deg); NOT working without full normalize */
-}
-
-#cpic4 {
-  width: 45%;
-  border: solid green;
-  /* transform: translate(20px, 35px) rotate(10deg); NOT working without full normalize */
-}
-
-#cpic5 {
-  width: 45%;
-  border: solid brown;
-  /* transform: translate(220px, -55px) rotate(-10deg); NOT working without full normalize */
-}
-
-/* end of Nilufer Anlar section ====== */
-
-/*===========================================================NELLY CSS END==================================================*/
-/*===========================================================NELLY CSS END==================================================*/
-/*===========================================================NELLY CSS END==================================================*/
-
-/*===========================================================RICHARD CSS START==================================================*/
-/*===========================================================RICHARD CSS START==================================================*/
-/*===========================================================RICHARD CSS START==================================================*/
+/*======= RICHARD CSS START =================================================*/
 
 /**richard's form**/
 
@@ -447,8 +409,8 @@ td {
   text-align: left;
   border: 1px solid cornsilk;
   border-radius: 4px;
-  margin-bottom: 10px;
-  padding: 0px 10px;
+  margin-bottom: 0.625em;
+  padding: 0px 0.625em;
   font-family: "Raleway", sans-serif;
 }
 
@@ -456,8 +418,8 @@ td {
   text-align: center;
   border: 1px solid cornsilk;
   border-radius: 4px;
-  margin-bottom: 10px;
-  padding: 0px 10px;
+  margin-bottom: 0.625em;
+  padding: 0px 0.625em;
   font-size: 0.95em;
   font-family: "Raleway", sans-serif;
 }
@@ -588,11 +550,7 @@ input[type="reset"]:hover {
 /** end of reg form**/
 
 /*===========================================================RICHARD CSS END==================================================*/
-/*===========================================================RICHARD CSS END==================================================*/
-/*===========================================================RICHARD CSS END==================================================*/
 
-/*===========================================================DANIEL MEDIA START===============================================*/
-/*===========================================================DANIEL MEDIA START===============================================*/
 /*===========================================================DANIEL MEDIA START===============================================*/
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon.
@@ -644,68 +602,120 @@ input[type="reset"]:hover {
 }
 
 /*===========================================================DANIEL MEDIA ENDS===============================================*/
-/*===========================================================DANIEL MEDIA ENDS===============================================*/
-/*===========================================================DANIEL MEDIA ENDS===============================================*/
+
 
 /*===========================================================NELLY MEDIA STARTS===============================================*/
-/*===========================================================NELLY MEDIA STARTS===============================================*/
-/*===========================================================NELLY MEDIA STARTS===============================================*/
 
+/* Nilufer Anlar - for tablets */
 @media screen and (min-width: 760px) {
-  /* Nilufer Anlar */
+  
+  #main-about, #main-const, #main-pubs, #main-events, #main-cong18 {
+    margin: 1em 1em;
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+  
   #umind,
   #tman,
   #athens {
-    width: 25%;
+    width: 30%;
+  }
+  
+  #qlist p {
+    font-size: 0.9em;
+    margin-left: 0.625em;
   }
 
+  #main-cong18 p {
+    font-size: 1.1em;
+    color: black;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em; 
+  }
+  
   #st-list {
-    list-style-type: circle;
+    font-size: 1em;
+    font-weight: 500;
+    list-style-type: none;
+    text-align: center;
     color: indigo;
-    margin: 10px 10px 10px 30px; /* put some indent for emphasis */
+    margin-left: 0;
+    padding: 0.625em 0.625em;
+    background-color: lightgray;
   }
 
   #peru {
-    width: 425px;
-    height: 293px;
-    margin: 10px 10px;
+    width: 400px;
+    height: 220px;
+    margin: 0.625em 0.25em;
   }
 
   #sthemes {
-    float: left;
+    padding: 0; 
   }
-
-  #secondset {
-    transform: none;
-  }
-
-  #cpic2,
-  #cpic3,
-  #cpic4,
-  #cpic5 {
-    width: 25%;
-    transform: none; /* clear it for bigger screens */
-    float: right;
-  }
+  
   .accordion {
-    /* Nilufer Anlar */
     text-align: center; /* center it at bigger screens */
     transition: 0.4s;
   }
 }
 
-/* for desktops and wide screens ====== */
+/* Nilufer Anlar - for desktops and wide screens ====== */
 @media screen and (min-width: 992px) {
-  #umind,
-  #tman,
-  #athens {
-    width: 35%;
+  /* set the screen size to a max width */
+  #main-about, #main-const, #main-pubs, #main-events, #main-cong18 {
+    max-width: 75em;  /* at 1200px */
+    margin: 1.25em auto;
+  }
+  
+  #umind {
+    width: 25%;
+  }
+  
+  #tman, #athens {
+    width: 23%;
+  }
+  
+  #qlist p {
+    font-size: 1em;
+    margin-left: 1.25em;  /* at 20px */
+  }
+  
+  #main-cong18 h2 {
+    padding-left: 0.625em;
+  }
+
+  #main-cong18 p {
+    font-size: 1.2em;
+    color: black;
+    padding-top: 0.5em;  /* at 8px */
+    padding-bottom: 0.5em;
+    padding-left: 0.625em;
+    padding-right: 0.625em;
+  }
+  
+  #peru {
+    margin-left: 0.625em;
+    margin-right: 0.625em;
+  }
+
+  #sthemes {
+    padding: 0 0.625em;
+  }
+  
+  #st-list {
+    font-size: 1.1em;
+    line-height: 1.3em;
+    list-style-type: none;
+    color: black;
+    margin: 0;
+    padding: 1.25em 1.25em;  /* at 20px */
+    background-color: gainsboro;
   }
 }
 
 /*===========================================================NELLY MEDIA ENDS===============================================*/
-/*===========================================================NELLY MEDIA ENDS===============================================*/
-/*===========================================================NELLY MEDIA ENDS===============================================*/
+
 
 /*===========================================================RICHARD MEDIA START===============================================*/
 /*===========================================================RICHARD MEDIA START===============================================*/

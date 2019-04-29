@@ -119,8 +119,6 @@ We assumed browser defult font size of 16px.
 html {}
 
   body {
-    /* background: #262626;
-    color: #000; */
     margin: 0;
     padding-right: 100px;
     padding-left: 100px;
@@ -134,11 +132,6 @@ html {}
     width: 100%;
   }
 
-  /* .about {
-  width: 90%;
-  margin: auto;
-  padding-top: 5px;
-  } */
   .intro {
     border-bottom: 2px solid brown;
     width: 90%;
@@ -152,24 +145,10 @@ html {}
     font-family:"Didact+Gothic", sans-serif;
 
   }
-  /* .reg-btn {
-  width: 20%;
-  margin: 5px 40% 10px 40%;
-  background-color: brown;
-  border: none;
-  color: #FBEEC1;
-  border-radius: 3px;
-  text-align: center;
-  font-size: 1.0em;
-  line-height: 1.0em;
-  cursor: pointer;
-  } */
-
-  /* .reg-btn:hover {
-  background-color: #262626;
-  transition-duration: 0.5s;
-  } */
-
+  .intro img{
+	  height:50px;
+	  width: 50px;
+  }
 
   .graz {
     width: 100%;
@@ -227,11 +206,16 @@ html {}
 
   .banner {
     padding-top: 60px;
-    width: auto;
+    width: 10px;
   }
 
   a {
     color: #262626;
+  }
+  
+  .icons{
+	  padding-left: 50px;
+	  padding-right: 50px;
   }
 
   .footer {

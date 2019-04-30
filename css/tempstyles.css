@@ -189,7 +189,7 @@ img, iframe {
   position: relative;
   display: block;
   border: none;
-  width: 100%; /* for better user experience */
+  width: 95%; /* for better user experience */
 }
 
 /* ====== about page ====================== */

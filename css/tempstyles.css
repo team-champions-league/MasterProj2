@@ -15,7 +15,6 @@ We assumed browser defult font size of 16px.
 
 /* Add a black background color to the top navigation */
 
-
 .header {
   float: top;
   /* padding-top: 1em;  /* 16px, (16px/16px=1em) */ */
@@ -28,13 +27,6 @@ We assumed browser defult font size of 16px.
   justify-content: center;
   font-weight: 700;  /* Nelly made it bold */
 }
-
-/* #hm-pg{  /* NHA centered the image */
-/*  background-image: url("../media/graz.png");
-background-position: center; /* Center the image */
-/*  background-repeat: no-repeat; /* Do not repeat the image */
-/*  background-size: contain;
-} */
 
 /* Style the links inside the navigation bar */
 
@@ -54,9 +46,6 @@ background-position: center; /* Center the image */
   background-color:yellow;
 
 }
-
-/*Hide the link that should open and close the topnav on small screens */
-
 
 /* Dropdown container - needed to position the dropdown content */
 
@@ -132,8 +121,6 @@ background-position: center; /* Center the image */
   clear: both; /* Nelly fixed the footer. Daniel, pls do NOT change this */
 }
 
-/* Nelly: mobile logo NOT working, Daniel needs to fix it */
-
 #isud-img {
   width: 120px;
   height: 120px;
@@ -150,6 +137,11 @@ background-position: center; /* Center the image */
   font-weight: 700;
 }
 
+.intro h1 {
+  font-size: 3em;  /* at 48px, 48/16=3em */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
 #iconspics {
   width: 20%;
   margin-left: 3em;
@@ -162,12 +154,6 @@ background-position: center; /* Center the image */
 #hm-pg p {
    font-size: 1.25em;  /* 20px, (20px/16px=1em) */
 }
-  
-/* #hm-head {
-font-size: 3em;  /* at 48px, 48/16=3em */
-/* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-font-weight: 700;
-} */
 
 /*===========================================================DANIEL CSS END==================================================*/
 /*===========================================================DANIEL CSS END==================================================*/

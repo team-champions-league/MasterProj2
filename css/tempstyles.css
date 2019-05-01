@@ -124,10 +124,10 @@ We assumed browser defult font size of 16px.
 #isud-img {
   width: 120px;
   height: 120px;
-  margin-left: 0.5em;
+  /* margin-left: 0.5em; */
 }
 
-.header h1 {
+.header {
   margin-left: 0.5em;
 }
 

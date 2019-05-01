@@ -147,7 +147,6 @@ background-position: center; /* Center the image */
 .intro h1, h2, h3 {
   text-align: center;
   margin: 1em 1em;
-  padding: 1em 1em;
   font-weight: 700;
 }
 
@@ -159,10 +158,11 @@ background-position: center; /* Center the image */
   width: 100%;
 }
 
-/* #hm-pg p {
-font-size: 1.25em;  /* 20px, (20px/16px=1em) */
-/* }
-#hm-head {
+#hm-pg p {
+   font-size: 1.25em;  /* 20px, (20px/16px=1em) */
+}
+  
+/* #hm-head {
 font-size: 3em;  /* at 48px, 48/16=3em */
 /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 font-weight: 700;

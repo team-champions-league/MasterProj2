@@ -140,7 +140,7 @@ background-position: center; /* Center the image */
   margin-left: 2em;
 }
 
-#hm-pg h1, h2, h3 {
+.intro h1, h2, h3 {
   text-align: center;
   margin-left: 3em;
   font-weight: 700;

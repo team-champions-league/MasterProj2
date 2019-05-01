@@ -158,6 +158,10 @@ header h1 {
   width: 20%;
 }
 
+img #banner, #icons, #graz {
+  width: 100%;
+}
+
 /* #hm-pg p {
 font-size: 1.25em;  /* 20px, (20px/16px=1em) */
 /* }

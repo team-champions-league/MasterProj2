@@ -140,12 +140,14 @@ background-position: center; /* Center the image */
   /* left: 45%; */
 }
 
-#hm-pg {
-text-align: center;
+#hm-pg h1, h2, h3 {
+  text-align: center;
+  margin-left: 2em;
+  font-weight: 700;
 }
 
 #icons {
-  width: 30%;
+  width: 20%;
 }
 
 /* #hm-pg p {

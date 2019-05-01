@@ -19,7 +19,8 @@ We assumed browser defult font size of 16px.
   float: top;
   /* padding-top: 1em;  /* 16px, (16px/16px=1em) */
   /* padding-bottom: 1em;  /* 16px, (16px/16px=1em) */
-  text-align: center;
+  /* text-align: center; */
+  margin-left: 0.5em;  /* at 8px, 8px/16px=0.5em */
 }
 .topnav {
   background-color: silver;  /* Nelly changed color */
@@ -124,10 +125,6 @@ We assumed browser defult font size of 16px.
 #isud-img {
   width: 120px;
   height: 120px;
-}
-
-.header {
-  margin-left: 0.5em;
 }
 
 .intro h1, h2, h3 {

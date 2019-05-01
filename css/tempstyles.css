@@ -138,6 +138,11 @@ background-position: center; /* Center the image */
   width: 120px;
   height: 120px;
   margin-left: 2em;
+  padding-left: 2em;
+}
+
+header h1 {
+  padding-left: 2em;
 }
 
 .intro h1, h2, h3 {

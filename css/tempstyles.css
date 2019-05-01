@@ -142,12 +142,13 @@ background-position: center; /* Center the image */
 }
 
 header h1 {
+  margin-left: 2em;
   padding-left: 2em;
 }
 
 .intro h1, h2, h3 {
   text-align: center;
-  margin-left: 3em;
+  margin: 3em 3em;
   font-weight: 700;
 }
 

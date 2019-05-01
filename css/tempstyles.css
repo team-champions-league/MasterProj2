@@ -149,10 +149,12 @@ header h1 {
 .intro h1, h2, h3 {
   text-align: center;
   margin: 3em 3em;
+  padding: 3em 3em;
   font-weight: 700;
 }
 
 #icons {
+  position: relative;
   width: 20%;
 }
 

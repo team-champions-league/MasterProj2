@@ -137,21 +137,22 @@ background-position: center; /* Center the image */
 #isud-img {
   width: 120px;
   height: 120px;
-  margin-left: 1em;
+  margin-left: 0.5em;
 }
 
 .header h1 {
-  margin-left: 1em;
+  margin-left: 0.5em;
 }
 
 .intro h1, h2, h3 {
   text-align: center;
-  margin: 1em 1em;
+  margin: 0.3em;
   font-weight: 700;
 }
 
 #iconspics {
   width: 20%;
+  margin-left: 3em;
 }
 
 #bannerpics, #grazpics {

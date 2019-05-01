@@ -137,12 +137,12 @@ background-position: center; /* Center the image */
 #isud-img {
   width: 120px;
   height: 120px;
-  /* left: 45%; */
+  margin-left: 2em;
 }
 
 #hm-pg h1, h2, h3 {
   text-align: center;
-  margin-left: 2em;
+  margin-left: 3em;
   font-weight: 700;
 }
 

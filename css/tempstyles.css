@@ -143,13 +143,12 @@ background-position: center; /* Center the image */
 
 header h1 {
   margin-left: 2em;
-  padding-left: 2em;
 }
 
 .intro h1, h2, h3 {
   text-align: center;
   margin: 3em 3em;
-  padding: 3em 3em;
+  padding: 1em 1em;
   font-weight: 700;
 }
 
@@ -158,7 +157,7 @@ header h1 {
   width: 20%;
 }
 
-#banner, #icons, #graz {
+#banner, #graz {
   width: 100%;
 }
 

@@ -135,11 +135,16 @@ We assumed browser defult font size of 16px.
   text-align: center;
   margin: 0.3em;
   font-weight: 700;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.intro h1 {
-  font-size: 3em;  /* at 48px, 48/16=3em */
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+.intro h1, h2 {
+  font-size: 1.5em;  /* at 24px, 24/16=1.5em */
+}
+
+.intro h3 {
+  font-size: 1.2em;  /* at 19px, 24/16=1.5em */
+  line-height: 1.4em;
 }
 
 #iconspics {
